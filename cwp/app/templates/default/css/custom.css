@@ -1,0 +1,429 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.1.0 
+Created: August 2014
+License URI: http://support.wrapbootstrap.com/
+File Description: Place here your custom CSS styles
+*/
+
+/* MARGINS & PADDINGS */
+.p-xxs {
+  padding: 5px;
+}
+.p-xs {
+  padding: 10px;
+}
+.p-sm {
+  padding: 15px;
+}
+.p-m {
+  padding: 20px;
+}
+.p-md {
+  padding: 25px;
+}
+.p-lg {
+  padding: 30px;
+}
+.p-xl {
+  padding: 40px;
+}
+.m-xxs {
+  margin: 2px 4px;
+}
+.m-xs {
+  margin: 5px;
+}
+.m-sm {
+  margin: 10px;
+}
+.m {
+  margin: 15px;
+}
+.m-md {
+  margin: 20px;
+}
+.m-lg {
+  margin: 30px;
+}
+.m-xl {
+  margin: 50px;
+}
+.m-n {
+  margin: 0 !important;
+}
+.m-l-none {
+  margin-left: 0;
+}
+.m-l-xs {
+  margin-left: 5px;
+}
+.m-l-sm {
+  margin-left: 10px;
+}
+.m-l {
+  margin-left: 15px;
+}
+.m-l-md {
+  margin-left: 20px;
+}
+.m-l-lg {
+  margin-left: 30px;
+}
+.m-l-xl {
+  margin-left: 40px;
+}
+.m-l-n-xxs {
+  margin-left: -1px;
+}
+.m-l-n-xs {
+  margin-left: -5px;
+}
+.m-l-n-sm {
+  margin-left: -10px;
+}
+.m-l-n {
+  margin-left: -15px;
+}
+.m-l-n-md {
+  margin-left: -20px;
+}
+.m-l-n-lg {
+  margin-left: -30px;
+}
+.m-l-n-xl {
+  margin-left: -40px;
+}
+.m-t-none {
+  margin-top: 0;
+}
+.m-t-xxs {
+  margin-top: 1px;
+}
+.m-t-xs {
+  margin-top: 5px;
+}
+.m-t-sm {
+  margin-top: 10px;
+}
+.m-t {
+  margin-top: 15px;
+}
+.m-t-md {
+  margin-top: 20px;
+}
+.m-t-lg {
+  margin-top: 30px;
+}
+.m-t-xl {
+  margin-top: 40px;
+}
+.m-t-n-xxs {
+  margin-top: -1px;
+}
+.m-t-n-xs {
+  margin-top: -5px;
+}
+.m-t-n-sm {
+  margin-top: -10px;
+}
+.m-t-n {
+  margin-top: -15px;
+}
+.m-t-n-md {
+  margin-top: -20px;
+}
+.m-t-n-lg {
+  margin-top: -30px;
+}
+.m-t-n-xl {
+  margin-top: -40px;
+}
+.m-r-none {
+  margin-right: 0;
+}
+.m-r-xxs {
+  margin-right: 1px;
+}
+.m-r-xs {
+  margin-right: 5px;
+}
+.m-r-sm {
+  margin-right: 10px;
+}
+.m-r {
+  margin-right: 15px;
+}
+.m-r-md {
+  margin-right: 20px;
+}
+.m-r-lg {
+  margin-right: 30px;
+}
+.m-r-xl {
+  margin-right: 40px;
+}
+.m-r-n-xxs {
+  margin-right: -1px;
+}
+.m-r-n-xs {
+  margin-right: -5px;
+}
+.m-r-n-sm {
+  margin-right: -10px;
+}
+.m-r-n {
+  margin-right: -15px;
+}
+.m-r-n-md {
+  margin-right: -20px;
+}
+.m-r-n-lg {
+  margin-right: -30px;
+}
+.m-r-n-xl {
+  margin-right: -40px;
+}
+.m-b-none {
+  margin-bottom: 0;
+}
+.m-b-xxs {
+  margin-bottom: 1px;
+}
+.m-b-xs {
+  margin-bottom: 5px;
+}
+.m-b-sm {
+  margin-bottom: 10px;
+}
+.m-b {
+  margin-bottom: 15px;
+}
+.m-b-md {
+  margin-bottom: 20px;
+}
+.m-b-lg {
+  margin-bottom: 30px;
+}
+.m-b-xl {
+  margin-bottom: 40px;
+}
+.m-b-n-xxs {
+  margin-bottom: -1px;
+}
+.m-b-n-xs {
+  margin-bottom: -5px;
+}
+.m-b-n-sm {
+  margin-bottom: -10px;
+}
+.m-b-n {
+  margin-bottom: -15px;
+}
+.m-b-n-md {
+  margin-bottom: -20px;
+}
+.m-b-n-lg {
+  margin-bottom: -30px;
+}
+.m-b-n-xl {
+  margin-bottom: -40px;
+}
+.space-15 {
+  margin: 15px 0;
+}
+.space-20 {
+  margin: 20px 0;
+}
+.space-25 {
+  margin: 25px 0;
+}
+.space-30 {
+  margin: 30px 0;
+}
+/* MARGINS & PADDINGS */
+
+.text-darkblue {
+  color: #000099;
+}
+
+#map-canvas{
+  height: 320px;
+}
+
+.apply_from_photo {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  color: #ff0000;
+  padding: 0;
+}
+
+.apply_from_photo:hover {
+  text-decoration: underline;
+}
+
+.embassy_link {
+  font-size: 12px;
+}
+
+.help-block {
+  font-size: 12px;
+}
+
+.light-red-bg {
+  background-color: #E64D43;
+}
+
+.testimonial-body,
+.testimonial-body .testimonial-info-1 {
+  color: #ffffff;
+}
+
+.testimonial-body p {
+  font-size: 16px;
+}
+
+.pardons-bg-1 {
+  background: url("../images/blog-1.jpg") 50% 0px no-repeat;
+}
+
+@media (min-width: 768px) {
+  .pardons-bg-2 {
+    background: url("../images/pardon-img-1.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.header-top .social-links li span {
+  vertical-align: middle;
+}
+
+.vertical .tab-content {
+  padding: 10px 30px;
+}
+
+.work-timeline .table {
+  border-color: transparent;
+}
+
+.work-timeline table tbody {
+  background-color:transparent;
+}
+
+.work-timeline .table > tbody > tr > td {
+  border-color: transparent;
+}
+
+.work-timeline table tbody tr td:first-child {
+  width:120px;
+}
+.work-timeline table tbody tr td .progress-bar {
+  height:24px;
+  width:7.69%;
+  border-left:1px solid #fff;
+}
+
+@media (min-width: 992px) {
+  #simple_form {
+    position: absolute;
+    top: 12px;
+    right: 90px;
+    left: auto;
+    z-index: 1000;
+    color: #ffffff;
+    padding-right: 0;
+  }
+
+  #simple_form form {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #simple_form {
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    left: auto;
+    z-index: 1000;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+  .carousel {
+    height: 300px;
+  }
+  .carousel .item {
+    height: 300px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    height: 300px;
+  }
+  #main_banner .carousel-left,
+  #main_banner .carousel-right {
+    position: absolute; 
+    top: 150px; 
+    margin-top: -25px; 
+  }
+  #main_banner .carousel-left {
+    left: 15px;
+  }
+  #main_banner .carousel-right {
+    right: 50px;
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    height: 500px;
+  }
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    height: 500px;
+  }
+  #main_banner .carousel-left,
+  #main_banner .carousel-right {
+    position: absolute; 
+    top: 235px; 
+    margin-top: -25px; 
+  }
+  #main_banner .carousel-left {
+    left: 20px;
+  }
+  #main_banner .carousel-right {
+    right: 62px;
+  }
+  .carousel-control.left,
+  .carousel-control.right {
+    font-size: 50px;
+  }
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
