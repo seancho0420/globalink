@@ -1,0 +1,195 @@
+{
+	"title" :
+	{
+		"mainLogoUrl": "img/logo.jpg",
+		"mainTitle": "Yonge and Sheppard Income Tax",
+		"mainPhase": "Maximize your Return and Minimize your Payment"
+	},
+
+	"direcImage" :
+	[
+		{
+			"name": "Building",
+			"src": "img/yange-sheppard-subway.jpg"
+		},
+		{
+			"name": "Subway",
+			"src": "img/yange-sheppard-subway.jpg"
+		}
+	],
+
+	"contacts" :
+	[
+    {
+      "title": "Office Hours",
+      "data": [
+        {
+          "desc": "Mon - Fri: 10:00am - 7:00pm"
+        },
+        {
+          "desc": "Sat: 11:00am - 5:00pm"
+        },
+        {
+          "desc": "Sun: Closed"
+        }
+      ],
+      "colorCss": "text-danger"
+    },
+    {
+      "title": "Location",
+      "data": [
+        {
+          "desc": "Right beside Sheppard subway. Above Joon's Restaurant"
+        },
+        {
+          "desc": "50m North of Yonge/Sheppard Subway Station"
+        },
+        {
+          "desc": "Parking Lot at the Back of the Building!"
+        }
+      ],
+      "colorCss": "text-warning"
+    },
+    {
+      "title": "Address",
+      "data": [
+        {
+          "desc": "4852 Yonge St. Unit B, North York, ON M2N 5N2"
+        },
+        {
+          "desc": "Phone: (416) 225-8686"
+        },
+        {
+          "desc": "Email: info@globalinktax.com"
+        }
+      ],
+      "colorCss": "text-success"
+    }
+  ], 
+	
+	"priceLists" :
+	[
+    {
+      "title": "PERSONAL TAX PRICE LIST",
+      "list": [
+        {
+          "name": "Adult with Income",
+          "price": "Starting from $50"
+        },
+        {
+          "name": "Family",
+          "price": "Starting from $100"
+        },
+        {
+          "name": "Student-Full Time",
+          "price": "$25"
+        },
+        {
+          "name": "Self Employed",
+          "price": "Starting from $90"
+        },
+        {
+          "name": "Adult with No Employment Income",
+          "price": "Starting from $35"
+        },
+        {
+          "name": "Past Years Returns",
+          "price": "Add $10 to Each Year"
+        }
+      ]
+    },
+    {
+      "title": "SMALL BUSINESS TAX PRICE LIST",
+      "list": [
+        {
+          "name": "T2-Annual Corporate Tax",
+          "price": "Starting from $275"
+        },
+        {
+          "name": "HST Return",
+          "price": "Starting from $150"
+        },
+        {
+          "name": "Business Incoporation",
+          "price": "Starting from $200"
+        },
+        {
+          "name": "T4-Annual Payroll",
+          "price": "$75 per employee"
+        },
+        {
+          "name": "Financial Statement Preparation",
+          "price": "Starting from $500"
+        },
+        {
+          "name": "Business Plan",
+          "price": "Starting from $750"
+        }
+      ]
+    }
+  ],
+	
+	"fileLists" :
+	[
+    {
+      "title": "T1 Personal Tax Form Download",
+      "fileUrl": "files/T1_Personal_Tax_Client_Fillable.pdf",
+      "downName": "T1 Personal Tax-Client Fillable.pdf",
+      "btnCss": "btn-primary"
+    },
+    {
+      "title": "Business Tax Form Download",
+      "fileUrl": "files/Business_Tax_Client_Fillable.pdf",
+      "downName": "Business Tax-Client Fillable.pdf",
+      "btnCss": "btn-success"
+    }
+  ],
+
+	"contents" :
+	[
+    {
+      "body": "Global Link Tax provides fast and accurate personal and small business tax returns."
+    },
+    {
+      "body": "Our Team of 3 consists of a Chartered Professional Accountant-CMA who is also a U.S. Certified Public Accountant, and 2 accounting clerks. Our team is professional and friendly and will ensure you maximize your return while minimizing your taxes."
+    },
+    {
+      "body": "Walk-ins welcome, no appointment necessary. We are right beside the Sheppard subway station, look for the large white sign Global Link Immigration and Business Services."
+    },
+    {
+      "body": "Thousands of successful tax cases filed the past 4 years with a near perfect accuracy rate. We pride ourselves in filing your taxes right the first time!"
+    },
+    {
+      "body": "Personal taxes take about 2-3 business days to be processed. Please download, and bring in the filled out form above for faster service."
+    }
+  ],
+
+	"coLogo" :
+	[
+    {
+      "name": "CPA",
+      "src": "img/re_cpa.jpg"
+    },
+    {
+      "name": "CMA",
+      "src": "img/re_cma.jpg"
+    },
+    {
+      "name": "CPA_US",
+      "src": "img/re_cpaus.jpg"
+    }
+  ],
+
+	"serviceInc" :
+	[
+    {
+      "title": "Our Services areas",
+      "body": "Burlington, Barrie, Belleville, Brampton, GTA or the Greater Toronto Area, Toronto North, Toronto Centre, Toronto East, Toronto West, Midtown Toronto, Downtown Toronto, North York, Etobicoke, Scarborough, Richmond Hill, Thornhill, Yorkville, Kingston, Kitchener, London Ontario, Markham, Milton, Mississauga, Newmarket, Oakville, Oshawa, Pickering, Richmond Hill, Peterborough, Waterloo, Whitby, "
+    },
+    {
+      "title": "Other Accounting Services Include",
+      "body": "Bookkeeping, Business Dissolution, Tax Audits, Income Tax, Business Taxes, Back Taxes, Multiple Year Taxes, CCTB, WSIB, HST Returns, GST Returns, Tax Help, Late Tax, Tax Specialist, CA Taxes, CMA Taxes, CPA Taxes, CGA Taxes, Experienced Accountant, Efile, Efile agent, T4, T2202A, RRSP Contributions, Medical Expenses"
+    }
+  ]
+
+}

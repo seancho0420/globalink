@@ -1,0 +1,199 @@
+{
+	"title":
+	{
+	  "mainLogoUrl": "../img/logo.jpg",
+	  "mainTitle": "Yonge and Sheppard Income Tax",
+	  "mainPhase": "Maximize your Return and Minimize your Payment"
+	},
+
+	"direcImage":
+	[
+	  {
+	    "name": "Building",
+	    "src": "../img/yange-sheppard-subway.jpg"
+	  },
+	  {
+	    "name": "Subway",
+	    "src": "../img/yange-sheppard-subway.jpg"
+	  }
+	],
+
+	"contacts":
+	[
+	  {
+	    "title": "Office Hours",
+	    "data": [
+	      {
+	        "desc": "星期一到星期五：10点到7点"
+	      },
+	      {
+	        "desc": "星期六：11点到5点"
+	      },
+	      {
+	        "desc": "星期日：关闭"
+	      }
+	    ],
+	    "colorCss": "text-danger"
+	  },
+	  {
+	    "title": "Location",
+	    "data": [
+	      {
+	        "desc": "穿过加拿大政府楼护照中心（南面）"
+	      },
+	      {
+	        "desc": "Yonge/Sheppard地铁站向北50米"
+	      },
+	      {
+	        "desc": "有限免费停车位"
+	      }
+	    ],
+	    "colorCss": "text-warning"
+	  },
+	  {
+	    "title": "Address",
+	    "data": [
+	      {
+	        "desc": "4852 Yonge St. Unit B, North York On M2N 5N2"
+	      },
+	      {
+	        "desc": "Phone: (416) 225-8686"
+	      },
+	      {
+	        "desc": "Email: info@globalinktax.com"
+	      }
+	    ],
+	    "colorCss": "text-success"
+	  }
+	],
+
+	"priceLists":
+	[
+	  {
+	    "title": "个人税务价格表",
+	    "list": [
+	      {
+	        "name": "成人（有收入)",
+	        "price": "$50起"
+	      },
+	      {
+	        "name": "家庭",
+	        "price": "$100起"
+	      },
+	      {
+	        "name": "全职学生",
+	        "price": "$25"
+	      },
+	      {
+	        "name": "自雇",
+	        "price": "$90起"
+	      },
+	      {
+	        "name": "成人 (无收入)",
+	        "price": "$35起"
+	      },
+	      {
+	        "name": "往年报税",
+	        "price": "每年加$10"
+	      },
+	      {
+	        "name": "海外资产",
+	        "price": "$100起"
+	      }
+	    ]
+	  },
+	  {
+	    "title": "小生意税务价格表",
+	    "list": [
+	      {
+	        "name": "T2-企业报税",
+	        "price": "$275起"
+	      },
+	      {
+	        "name": "HST退税",
+	        "price": "$150起"
+	      },
+	      {
+	        "name": "公司注册",
+	        "price": "$200起"
+	      },
+	      {
+	        "name": "T4-工资表",
+	        "price": "$75/员工"
+	      },
+	      {
+	        "name": "财务报表",
+	        "price": "$500起"
+	      },
+	      {
+	        "name": "商业计划",
+	        "price": "$750起"
+	      }
+	    ]
+	  }
+	],
+
+	"fileLists":
+	[
+	  {
+	    "title": "T1 个人报税表",
+	    "fileUrl": "../files/T1_Personal_Tax_Client_Fillable.pdf",
+	    "downName": "T1 Personal Tax-Client Fillable.pdf",
+	    "btnCss": "btn-primary"
+	  },
+	  {
+	    "title": "T2-企业报税表",
+	    "fileUrl": "../files/Business_Tax_Client_Fillable.pdf",
+	    "downName": "Business Tax-Client Fillable.pdf",
+	    "btnCss": "btn-success"
+	  }
+	],
+
+	"contents":
+	[
+	  {
+	    "body": "Global Link Tax提供精确快捷的个人与企业税务服务。"
+	  },
+	  {
+	    "body": "我们的团队由一名资深会计师（加拿大CPA﹑CMA及美国CPA）与两名会计员组成，专业优质的服务以确保您缴付最小的税款，得到最大的退税。"
+	  },
+	  {
+	    "body": "欢迎随时来访，无需提前预约。我们就在加拿大政府楼（护照中心）对面，我们门前有块白色大招牌 “Global Link Immigration and Business Services”"
+	  },
+	  {
+	    "body": "在过去的四年里，我们以近乎完美的精确率完成了成千上万的税务案子。我们以能在第一时间为您的税务服务为荣！"
+	  },
+	  {
+	    "body": "个人报税处理时间为2-3个工作日。请下载填写表格以便能得到更快捷的服务。"
+	  }
+	],
+
+	"coLogo":
+	[
+	  {
+	    "name": "CPA",
+	    "src": "../img/re_cpa.jpg"
+	  },
+	  {
+	    "name": "CMA",
+	    "src": "../img/re_cma.jpg"
+	  },
+	  {
+	    "name": "CPA_US",
+	    "src": "../img/re_cpaus.jpg"
+	  }
+	],
+
+	"serviceInc":
+	[
+	  {
+	    "title": "我们的服务范围",
+	    "body": "Burlington, Barrie, Belleville, Brampton, GTA or the Greater Toronto Area, Toronto North, Toronto Centre, Toronto East, Toronto West, Midtown Toronto, Downtown Toronto, North York, Etobicoke, Scarborough, Richmond Hill, Thornhill, Yorkville, Kingston, Kitchener, London Ontario, Markham, Milton, Mississauga, Newmarket, Oakville, Oshawa, Pickering, Richmond Hill, Peterborough, Waterloo, Whitby, "
+	  },
+	  {
+	    "title": "其他会计服务包括",
+	    "body": "簿记，企业注销，税务审计，个人所得税，企业税务，往年税务，多年税务，牛奶金，WSIB 劳工安全与保险，HST退税，GST退税，税务援助，延迟报税，税务专家，CA税务，CMA税务，CPA税务，CGA税务，经验会计师，EFILE电子报税，EFILE电子报税代理，T4工资，T2202A学费，RRSP，医疗费用。"
+	  }
+	]
+
+}

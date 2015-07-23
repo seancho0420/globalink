@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-lg-4 col-md-4" ng-repeat="contact in info.contacts">
+    <h3>{{contact.title}}</h3>
+    <div ng-show="$index === 0">
+      <!-- for summer time -->
+      <!-- <h4 class="text-info">
+        {{contact.data[0].desc}}<br>({{contact.data[1].desc}})
+      </h4> -->
+      <h4 class="{{contact.colorCss}}" ng-repeat="cont in contact.data">{{cont.desc}}</h4> <!-- for summer time (ng-show="$index > 1") -->
+    </div>
+    <div ng-show="$index > 0">
+      <h4 class="{{contact.colorCss}}" ng-repeat="cont in contact.data">{{cont.desc}}</h4>
+    </div>
+  </div>
+</div>
