@@ -1,0 +1,23 @@
+.container {
+	width:90%;
+	margin: 0 auto;
+}
+
+.carousel-demo {
+	/*width:900px;*/
+}
+
+.carousel-demo li {
+	background:#ccc;
+	border:1px solid #fff;
+	color:#666; 
+	float:left;
+	font-weight:bold;
+	font-size:3em;
+	list-style:none;
+	padding:0;
+	margin:0;
+	text-align:center;
+	/*width:500px;*/
+	/*height:333px;*/
+}

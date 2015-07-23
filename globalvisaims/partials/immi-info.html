@@ -1,0 +1,19 @@
+<h4 class="gli-color gli-bold">이민정보</h4>
+
+<div class="panel-group" id="immiAccordion">
+	<div class="panel panel-default" ng-repeat="info in info.immiInfos">
+		<div class="panel-heading">
+    		<h6 class="panel-title">
+        		<a data-toggle="collapse" data-parent="#immiAccordion" href="#immi{{$index}}">
+          			{{info.title}}&nbsp;<span class="caret"></span>
+          			<div class="pull-right"><small><span class="glyphicon glyphicon-plus-sign hidden-xs"></span></small></div>
+        		</a>
+      		</h6>
+    	</div>
+	    <div id="immi{{$index}}" class="panel-collapse collapse">
+	      	<div class="panel-body">
+	      		<div ng-bind-html="info.body"></div>
+	      	</div>
+	    </div>
+	</div>
+</div>

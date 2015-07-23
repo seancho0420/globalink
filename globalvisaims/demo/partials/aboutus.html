@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-lg-6 col-md-6" ng-repeat="about in aboutus" ng-hide="$last">
+    <h4 ng-repeat="abo in about.data">
+    	{{abo.info}}
+    </h4>
+  </div>
+</div>
+
+
+<div class="text-success" ng-repeat="about in aboutus" ng-show="$last" style="margin-top:12px">
+	<p class="lead" ng-repeat="abo in about.data">
+		{{abo.info}}
+	</p>
+</div>

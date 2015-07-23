@@ -1,0 +1,32 @@
+ <h3 class="text-success">Client Successes</h3>
+ <div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-10">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="{{$index}}" ng-class="{active: $index === 0}" ng-repeat="success in clientSuccesses"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item" ng-class="{active: $index === 0}" ng-repeat="success in clientSuccesses">
+          <img ng-src="{{success.source}}" alt="banner{{$index}}">
+          <div class="carousel-caption" ng-repeat="cap in success.caption">
+            <h3>{{cap.title}}</h3>
+            <p>{{cap.body}}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </div>
+  <div class="col-lg-1"></div>
+</div>

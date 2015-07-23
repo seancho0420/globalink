@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-sm-6" ng-repeat="staff in staffMembers" ng-show="$index < 2">
+    <h4 class="text-primary">{{staff.name}}</h4>
+    
+    <table class="table-condensed">
+      <tr>
+        <td><img ng-src="{{staff.photo}}" alt="..." class="img-rounded"></td>
+        <td><div ng-bind-html="staff.profile"></div></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6" ng-repeat="staff in staffMembers" ng-show="$index > 1">
+    <h4 class="text-primary">{{staff.name}}</h4>
+    
+    <table class="table-condensed">
+      <tr>
+        <td><img ng-src="{{staff.photo}}" alt="..." class="img-rounded"></td>
+        <td><div ng-bind-html="staff.profile"></div></td>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<img class="img-responsive" style="display:inline" ng-repeat="logo in info.mainLogos" ng-src="{{logo.src}}" alt="{{logo.title}}" ng-show="!$last">
+
+
+<h4 class="text-muted">
+	<!-- get last element of object -->
+  {{info.mainLogos[info.mainLogos.length - 1].title}}
+</h4>

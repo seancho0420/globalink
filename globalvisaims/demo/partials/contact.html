@@ -1,0 +1,30 @@
+<div class="container-fluid">
+<div class="row">
+  <!-- <div class="col-md-1"></div> -->
+  <div class="col-md-3" ng-show="$index === 0" ng-repeat="contact in contacts">
+    <address class="pull-right">
+      <span ng-repeat="cont in contact.data">
+        {{cont.desc}}<br>
+      </span>
+    </address>
+  </div>
+
+  <div class="col-md-6 text-center">
+    <img src="img/logo.jpg" class="img-responsive" alt="logo" style="margin:0 auto">
+    
+    <h4 class="text-muted">
+      Excellence in Customer Service, helping one client at a time
+    </h4>
+  </div>
+   
+  <div class="col-md-3" ng-show="$last" ng-repeat="contact in contacts">
+    <address>
+      <strong>{{contact.category}}</strong><br>
+      <span ng-repeat="cont in contact.data">
+        {{cont.desc}}<br>
+      </span>
+    </address>
+    
+  </div>
+</div>
+</div>

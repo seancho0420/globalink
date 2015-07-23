@@ -1,0 +1,72 @@
+/* added by Sean */
+.gli-color {
+  color: #DA0404;
+}
+
+.gli-bold {
+  font-weight: bold;
+}
+
+.iccrc-logo {
+  margin-top: 10px;
+}
+
+.gvi-horizontal-scroll {
+  /*width:900px;*/
+}
+
+.gvi-horizontal-scroll ul {
+  padding: 0;
+}
+
+.gvi-horizontal-scroll li {
+  background:#ccc;
+  border:1px solid #fff;
+  color:#666; 
+  float:left;
+  font-weight:bold;
+  font-size:3em;
+  list-style:none;
+  padding:0;
+  margin:0;
+  text-align:center;
+  /*width:500px;*/
+  /*height:333px;*/
+}
+
+
+/*.kinetic-slider-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  overflow: hidden; }
+  @media all and (max-width: 1000px) {
+    .kinetic-slider-container {
+      height: 310px; } }
+  @media all and (max-width: 600px) {
+    .kinetic-slider-container {
+      height: 210px; } }
+
+.kinetic-slider-content {
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
+  .kinetic-slider-content a {
+    position: relative;
+    display: block;
+    float: left;
+    width: 390px;
+    height: 390px;
+    padding: 5px;
+    overflow: hidden; }
+    .kinetic-slider-content a img {
+      height: 100%; }
+    @media all and (max-width: 1000px) {
+      .kinetic-slider-content a {
+        width: 300px;
+        height: 300px; } }
+    @media all and (max-width: 600px) {
+      .kinetic-slider-content a {
+        width: 200px;
+        height: 200px; } }*/
