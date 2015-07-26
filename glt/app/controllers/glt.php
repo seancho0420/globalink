@@ -128,6 +128,12 @@ class glt extends \core\controller{
 		View::render('about/index', $data);
 		View::rendertemplate('footer', $data);
 	}
+
+	public function contact() {
+		View::rendertemplate('header', $data);
+		View::render('contact/index', $data);
+		View::rendertemplate('footer', $data);
+	}
 }
 
 ?>

@@ -77,13 +77,15 @@ Router::any('/corporate/payroll', '\controllers\glt@annual_payroll');
 Router::any('/corporate/financial_statement', '\controllers\glt@financial_statement_preparation');
 Router::any('/corporate/business_issues', '\controllers\glt@business_tax_issues');
 
-
 Router::any('/business', '\controllers\glt@business_startup');
 
 Router::any('/accounting', '\controllers\glt@business_plans');
 Router::any('/accounting/consultations', '\controllers\glt@business_consultations');
 
 Router::any('/about', '\controllers\glt@about_us');
+
+Router::any('/contact', '\controllers\glt@contact');
+
 //if no route found
 Router::error('\core\error@index');
 

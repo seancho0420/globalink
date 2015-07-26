@@ -289,7 +289,7 @@ $current_page = url::lastsegment(url::segments());
 			<header class="header fixed clearfix dark-blue-bg">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-offset-1 col-xs-11">
+						<div class="col-xs-12">
 
 							<!-- header-right start -->
 							<!-- ================ -->
@@ -301,7 +301,7 @@ $current_page = url::lastsegment(url::segments());
 
 									<!-- navbar start -->
 									<!-- ================ -->
-									<nav class="navbar navbar-default" role="navigation">
+									<nav class="navbar navbar-default dark-blue-bg" role="navigation">
 										<div class="container-fluid">
 
 											<!-- Toggle get grouped for better mobile display -->
@@ -316,6 +316,7 @@ $current_page = url::lastsegment(url::segments());
 
 											<!-- Collect the nav links, forms, and other content for toggling -->
 											<div class="collapse navbar-collapse" id="navbar-collapse-1">
+												<!-- mega-menu start -->
 												<ul class="nav navbar-nav">
 													<!-- <li class="<?=$current_page == '' ? 'active' : '' ?>">
 														<a href="<?=DIR?>">Home</a> -->
@@ -335,7 +336,6 @@ $current_page = url::lastsegment(url::segments());
 														<a href="<?=DIR?>">Home</a>
 													</li>
 
-													<!-- mega-menu start -->
 													<li class="dropdown <?=$current_page == 'personal' || $current_page == 'express' || $current_page == 'personal_issues' || $current_page == 'us' ? 'active' : '' ?>" style="">
 														<a href="<?=DIR?>personal" class="dropdown-toggle" data-toggle="dropdown">Personal</a>
 														<ul class="dropdown-menu">
@@ -346,7 +346,6 @@ $current_page = url::lastsegment(url::segments());
 														</ul>
 													</li>
 
-													<!-- mega-menu start -->
 													<li class="dropdown <?=$current_page == 'corporate' || $current_page == 'hst' || $current_page == 'payroll' || $current_page == 'financial_statement' || $current_page == 'business_issues' ? 'active' : '' ?>" style="">
 														<a href="<?=DIR?>corporate" class="dropdown-toggle" data-toggle="dropdown">Corporate</a>
 														<ul class="dropdown-menu">
@@ -358,7 +357,6 @@ $current_page = url::lastsegment(url::segments());
 														</ul>
 													</li>
 
-													<!-- mega-menu end -->
 													<li class="<?=$current_page == 'business' ? 'active' : '' ?>">
 														<a href="<?=DIR?>business">Business Startup</a>
 													</li>
@@ -371,11 +369,15 @@ $current_page = url::lastsegment(url::segments());
 														</ul>
 													</li>
 
-													<!-- mega-menu start -->
 													<li class="<?=$current_page == 'about' ? 'active' : '' ?>">
 														<a href="<?=DIR?>about">About</a>
 													</li>
+
+													<li class="<?=$current_page == 'contact' ? 'active' : '' ?>">
+														<a href="<?=DIR?>contact">Contact</a>
+													</li>
 												</ul>
+												<!-- mega-menu end -->
 											</div>
 
 										</div>

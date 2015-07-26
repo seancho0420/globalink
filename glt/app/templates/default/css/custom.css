@@ -471,28 +471,28 @@ File Description: Place here your custom CSS styles
 .dark-blue-bg .main-navigation .navbar-nav > .open > a,
 .dark-blue-bg .main-navigation .navbar-nav > .open > a:hover,
 .dark-blue-bg .main-navigation .navbar-nav > .open > a:focus {
-  background-color: #0F2D53;
-  border-color: #0F2D53;
+  background-color: #0D284D;
+  border-color: #0D284D;
   color: #e84c3d;
 }
 
 .dark-blue-bg .dropdown-menu {
-  background-color: #0F2D53;
-  border-color: #0F2D53;
+  background-color: #0D284D;
+  border-color: #0D284D;
 }
 .dark-blue-bg .dropdown-menu > li > a {
   color: #f0f0f0;
-  border-bottom-color: #0F2D53;
+  border-bottom-color: #0D284D;
 }
 .dark-blue-bg .dropdown-menu > li > a:hover, 
 .dark-blue-bg .dropdown-menu > li > a:focus {
-  background-color: #0F2D53;
+  background-color: #0D284D;
   color: #e84c3d;
-  border-bottom-color: #0F2D53;
+  border-bottom-color: #0D284D;
 }
 
 .dark-blue-bg .dropdown-menu > .active > a {
-  background-color: #0F2D53;
+  background-color: #0D284D;
   color: #e84c3d;
 }
 
@@ -502,8 +502,38 @@ File Description: Place here your custom CSS styles
 .dark-blue-bg .dropdown-menu .menu > .active > a, 
 .dark-blue-bg .dropdown-menu .menu > .active > a:hover, 
 .dark-blue-bg .dropdown-menu .menu > .active > a:focus {
-  background-color: #0F2D53;
+  background-color: #0D284D;
   color: #ffffff;
+}
+
+@media (max-width: 769px) {
+  .dark-blue-bg .navbar-default .navbar-toggle:hover {
+    background-color: #0D284D;
+  }
+
+  .dark-blue-bg .navbar-default .navbar-nav > li > a:hover, 
+  .dark-blue-bg .navbar-default .navbar-nav > li > a:focus, 
+  .dark-blue-bg .navbar-default .navbar-nav > .active > a:hover, 
+  .dark-blue-bg .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #0D284D;
+  }
+
+  .dark-blue-bg .dropdown.open > .dropdown-menu > li > a {
+    background-color: #0D284D;
+    color: #ffffff;
+  }
+
+  .dark-blue-bg .dropdown.open > .dropdown-menu > li > a:hover,
+  .dark-blue-bg .dropdown.open > .dropdown-menu > li > a:focus {
+    background-color: #0D284D;
+    color: #e84c3d;
+  }
+
+  .dark-blue-bg .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+  .dark-blue-bg .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+  .dark-blue-bg .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #0D284D;
+  }
 }
 
 .language-btn-group {
@@ -514,4 +544,9 @@ File Description: Place here your custom CSS styles
 .language-btn-group .flag-icon {
   border: 1px solid #CCCCCC;
   line-height: 0.99em;
+}
+
+.overlay-container img {
+  width: 100%;
+  min-height: 174px;
 }
