@@ -83,33 +83,8 @@
 											</div>
 
 											<div class="form-group">
-												<label class="control-label" for="">Year of Last Conviction <span class="text-danger">*</span></label><br>
-												<select class="form-control" name="last_conviction" id="last_conviction" required>
-													<option value="">Choose</option>
-													<?php
-													for($i = 2014; $i >= 1990; $i--) {
-													?>
-													<option value="<?=$i?>"><?=$i?></option>
-													<?php
-													}
-													?>
-												</select>
-											</div>
-
-											<div class="form-group">
-												<label class="control-label" for="">Fines/Probation Status <span class="text-danger">*</span></label>
-												<select class="form-control" name="fines_status" id="fines_status" required>
-													<option value="">Choose</option>
-													<option value="All Completed">All Completed</option>
-													<option value="Still on Probation">Still on Probation</option>
-													<option value="Unpaid Fine">Unpaid Fine</option>
-													<option value="Unsure">Unsure</option>
-												</select>
-											</div>
-
-											<div class="form-group">
-												<label for="message">Summarize your Criminal Record <span class="text-danger">*</span></label>
-												<textarea class="form-control" rows="6" id="criminal_record" name="criminal_record" placeholder="" required></textarea>
+												<label for="message">Message <span class="text-danger">*</span></label>
+												<textarea class="form-control" rows="6" id="criminal_record" name="criminal_record" style="resize:none;" required></textarea>
 											</div>
 
 											<div class="form-group">
@@ -133,18 +108,6 @@
 												<li style="padding: 2px 0"><i class="fa fa-phone pr-10"></i>Phone: <?=PHONE?></li>
 												<li style="padding: 2px 0"><i class="fa fa-fax pr-10"></i>Fax: <?=FAX?></li>
 												<li style="padding: 2px 0"><i class="fa fa-envelope pr-10"></i>General Inquiries: <a href="mailto:<?=EMAIL_ADDR?>"><?=EMAIL_ADDR?></a></li>
-												<li style="padding: 2px 0"><i class="fa fa-envelope pr-10"></i>Existing Clients: <a href="mailto:clientcare@canadawidepardons.com">clientcare@canadawidepardons.com</a></li>
-												<li style="padding: 2px 0"><i class="fa fa-envelope pr-10"></i>Accounting: <a href="mailto:accounting@canadawidepardons.com">accounting@canadawidepardons.com</a></li>
-												<li style="padding: 2px 0"><i class="fa fa-envelope pr-10"></i>Fingerprints: <a href="mailto:fingerprints@canadawidepardons.com">fingerprints@canadawidepardons.com</a></li>
-											</ul>
-										</div>
-
-										<div class="col-md-12 m-l-sm m-t-sm">
-											<ul class="list">
-												<li style="padding: 2px 0"><i class="fa fa-globe pr-10"></i>RCMP: <a href="http://www.rcmp-grc.gc.ca" target="_blank">www.rcmp-grc.gc.ca</a></li>
-												<li style="padding: 2px 0"><i class="fa fa-globe pr-10"></i>Parole Board of Canada (PBC): <a href="http://pbc-clcc.gc.ca/index-eng.shtml" target="_blank">pbc-clcc.gc.ca/index-eng.shtml</a></li>
-												<li style="padding: 2px 0"><i class="fa fa-globe pr-10"></i>Citizenship & Immigration Canada: <a href="http://www.cic.gc.ca" target="_blank">www.cic.gc.ca</a></li>
-												<li style="padding: 2px 0"><i class="fa fa-globe pr-10"></i>Department of Homeland Security (DHS): <a href="http://www.rcmp-grc.gc.ca" target="_blank">www.dhs.gov/index.shtm</a></li>
 											</ul>
 										</div>
 									</div>
