@@ -84,7 +84,7 @@
 
 											<div class="form-group">
 												<label for="message">Message <span class="text-danger">*</span></label>
-												<textarea class="form-control" rows="6" id="criminal_record" name="criminal_record" style="resize:none;" required></textarea>
+												<textarea class="form-control" rows="6" id="message" name="message" style="resize:none;" required></textarea>
 											</div>
 
 											<div class="form-group">

@@ -100,7 +100,7 @@ class glt extends \core\model {
 
 		$mail->setFrom($params['email']);
 		$mail->addAddress(EMAIL_ADDR);
-		$mail->subject($params['subject']);
+		$mail->subject('A Request Via Contact Form - ' . $params['name']);
 
 		$message = '<table style="border:none"><tr><td style="width:80px"><b>Name</b></td><td>' . $params['name'] . '</td></tr>' . 
 			'<tr><td><b>Email</b></td><td>' . $params['email'] . '</td></tr>' .
@@ -114,7 +114,7 @@ class glt extends \core\model {
 			"name"=>$params['name'],
 			"email"=>$params['email'],
 			"phone"=>$params['phone'],
-			"subject"=>$params['subject'],
+			"best_time_to_call"=>$params['best_time_to_call'],
 			"message"=>$params['message'],
 			"email_sent"=>$email_sent,
 		);

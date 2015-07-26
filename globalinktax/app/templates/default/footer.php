@@ -45,6 +45,7 @@ use helpers\assets;
 											<li><a href="<?=DIR?>business">Business Startup</a></li>
 											<li><a href="<?=DIR?>accounting">Accounting Services</a></li>
 											<li><a href="<?=DIR?>about">About Us</a></li>
+											<li><a href="<?=DIR?>contact">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>

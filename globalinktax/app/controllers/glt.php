@@ -130,12 +130,12 @@ class glt extends \core\controller{
 	}
 
 	public function contact() {
-		// if(isset($_REQUEST['submit'])) {
-		// 	$params = $_REQUEST;
+		if(isset($_POST['submit'])) {
+			$params = $_POST;
 
-		// 	$data = $this->_glt->contact_submit($params);
-		// }
-		
+			$data = $this->_glt->contact_submit($params);
+		}
+
 		View::rendertemplate('header', $data);
 		View::render('contact/index', $data);
 		View::rendertemplate('footer', $data);
