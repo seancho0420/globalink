@@ -6,7 +6,7 @@
 		if ($("#map-canvas").length>0) {
 			var map, myLatlng, myZoom, marker;
 			var infowindow = new google.maps.InfoWindow({
-				content: '<h3 style="margin:10px 0">Canada Wide Pardons</h3>' + 
+				content: '<h3 style="margin:10px 0">Global Link Tax</h3>' + 
 					'4852 Yonge St. Unit B<br>Toronto, ON M2N 5N2'
 			});
 			// Set the coordinates of your location

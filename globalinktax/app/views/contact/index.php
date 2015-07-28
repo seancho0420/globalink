@@ -87,9 +87,6 @@
 												<textarea class="form-control" rows="6" id="message" name="message" style="resize:none;" required></textarea>
 											</div>
 
-											<div class="form-group">
-												<h4>Your Submission is 100% Confidential</h4>
-											</div>
 											<input type="submit" value="Submit" name="submit" class="btn btn-default">
 										</form>
 									</div>

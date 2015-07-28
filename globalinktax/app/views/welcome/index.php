@@ -2,8 +2,12 @@
 use helpers\url;
 ?>
 
-<div class="banner">
-	<img src="<?=url::template_path() . 'images/main-banner.png'?>" style="width:100%" class="img-responsive" alt="main_banner">
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<img src="<?=url::template_path() . 'images/main-banner.png'?>" style="width:100%" class="img-responsive" alt="main_banner">
+		</div>
+	</div>
 </div>
 
 <!-- section start -->
