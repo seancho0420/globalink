@@ -1,14 +1,15 @@
 <?php namespace helpers\phpmailer;
 class mail extends phpmailer {
     // Set default variables for all new objects
-    public $From     = 'noreply@domain.com';
+    public $From     = 'noreply@globalinktax.com';
     public $FromName = SITETITLE;
-    //public $Host     = 'smtp.gmail.com';
-    //public $Mailer   = 'smtp';
-    //public $SMTPAuth = true;                         
-    //public $Username = 'email';                         
-    //public $Password = 'password';                         
-    //public $SMTPSecure = 'tls';                         
+    // public $Host     = 'box953.bluehost.com';
+    // public $Mailer   = 'smtp';
+    // public $SMTPAuth = true;                         
+    // public $Username = 'info@globalinktax.com';                         
+    // public $Password = 'global8008';                         
+    // public $SMTPSecure = 'ssl';                         
+    // public $Port = 465;
     public $WordWrap = 75;
 
     public function subject($subject) {

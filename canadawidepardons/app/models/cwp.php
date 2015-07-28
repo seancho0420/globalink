@@ -44,9 +44,9 @@ class cwp extends \core\model {
 	public function contact_submit($params=array()) {
 		$mail = new \helpers\phpmailer\mail();
 
-		$mail->setFrom($params['email']);
+		$mail->setFrom(EMAIL_ADDR, SITETITLE);
 		$mail->addAddress(EMAIL_ADDR);
-		$mail->subject('[Canada Wide Pardons] A New Contact Form Has Been Submitted.');
+		$mail->subject('[' . SITETITLE . '] A New Contact Form Has Been Submitted.');
 
 		$message = '<table style="border:none"><tr><td style="width:200px"><b>Name</b></td><td>' . $params['name'] . '</td></tr>' . 
 			'<tr><td><b>Email</b></td><td>' . $params['email'] . '</td></tr>' .
