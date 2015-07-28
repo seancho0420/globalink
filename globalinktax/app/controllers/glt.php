@@ -143,12 +143,12 @@ class glt extends \core\controller{
 	}
 
 	public function cn() {
-		url::redirect('http://cn.globalinktax.com/cn/');
+		header("Location: http://cn.globalinktax.com/cn/");
 		die();
 	}
 
 	public function kr() {
-		url::redirect('http://kr.globalinktax.com/kr/');
+		header("Location: http://kr.globalinktax.com/kr/");
 		die();
 	}
 }
