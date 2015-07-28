@@ -1,5 +1,6 @@
 <?php namespace controllers;
 use core\view;
+use helpers\url;
 
 /*
  * Welcome controller
@@ -139,6 +140,16 @@ class glt extends \core\controller{
 		View::rendertemplate('header', $data);
 		View::render('contact/index', $data);
 		View::rendertemplate('footer', $data);
+	}
+
+	public function cn() {
+		url::redirect('http://cn.globalinktax.com/cn/');
+		die();
+	}
+
+	public function kr() {
+		url::redirect('http://kr.globalinktax.com/kr/');
+		die();
 	}
 }
 

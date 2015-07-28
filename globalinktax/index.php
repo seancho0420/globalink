@@ -86,6 +86,11 @@ Router::any('/about', '\controllers\glt@about_us');
 
 Router::any('/contact', '\controllers\glt@contact');
 
+
+Router::any('/cn', '\controllers\glt@cn');
+Router::any('/ch', '\controllers\glt@cn');
+Router::any('/kr', '\controllers\glt@kr');
+
 //if no route found
 Router::error('\core\error@index');
 

@@ -155,8 +155,8 @@ $current_page = url::lastsegment(url::segments());
 
 										<div class="language-btn-group">
 											<a href="<?=DIR?>"><span class="flag-icon flag-icon-ca"></span></a>
-											<a href="http://cn.globalinktax.com"><span class="flag-icon flag-icon-cn"></span></a>
-											<a href="http://kr.globalinktax.com"><span class="flag-icon flag-icon-kr"></span></a>
+											<a href="http://globalinktax.com/cn"><span class="flag-icon flag-icon-cn"></span></a>
+											<a href="http://globalinktax.com/kr"><span class="flag-icon flag-icon-kr"></span></a>
 										</div>
 									</div>
 								</div>
