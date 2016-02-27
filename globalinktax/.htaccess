@@ -11,7 +11,7 @@ Options -Indexes
  	Options -Indexes
 
 	RewriteEngine On
-	RewriteBase /projects/globalink/globalinktax/
+	RewriteBase /
 
 	# Force to exclude the trailing slash
 	RewriteCond %{REQUEST_FILENAME} !-d
