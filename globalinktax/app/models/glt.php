@@ -5,96 +5,6 @@ class glt extends \core\model {
 		parent::__construct();
 	}
 
-	public function get_countries() {
-		return $this->_db->select("SELECT * FROM countries");
-	}
-
-	public function get_visainfo($citizen, $travel) {
-		return $this->_db->select("SELECT * FROM travelvisa WHERE citizen=:citizen AND travel=:travel", array(':citizen'=>$citizen, ':travel'=>$travel));
-	}
-
-	public function apply_visa($params=array()) {
-		$htmlbody = "<html><head><style>table td:first-child { min-width: 240px;background-color: #DCDCDC;font-weight: bold; } table td { padding: 5px 10px; }" . 
-			"</style></head><body><table>" . 
-			"<tr>Travel to</td><td>" . $params['traveling_to'] . "</td></tr>" . 
-			"<tr><td>First name</td><td>" . $params['first_name'] . "</td></tr>" . 
-			"<tr><td>Last name</td><td>" . $params['last_name'] . "</td></tr>" . 
-			"<tr><td>Middle name</td><td>" . $params['middle_name'] . "</td></tr>" . 
-			"<tr><td>Maiden of former name</td><td>" . $params['maiden_name'] . "</td></tr>" . 
-			"<tr><td>Email</td><td>" . $params['email'] . "</td></tr>" . 
-			"<tr><td>Sex</td><td>" . $params['sex'] . "</td></tr>" . 
-			"<tr><td>Citizenship</td><td>" . $params['citizenship'] . "</td></tr>" . 
-			"<tr><td>Residency</td><td>" . $params['residency'] . "</td></tr>" . 
-			"<tr><td>Date of birth</td><td>" . $params['date_of_birth'] . "</td></tr>" . 
-			"<tr><td>City of birth</td><td>" . $params['city_of_birth'] . "</td></tr>" . 
-			"<tr><td>State/Province of birth</td><td>" . $params['state_of_birth'] . "</td></tr>" . 
-			"<tr><td>Country of birth</td><td>" . $params['country_of_birth'] . "</td></tr>" . 
-			"<tr><td>Address 1</td><td>" . $params['address1'] . "</td></tr>" . 
-			"<tr><td>Address 2</td><td>" . $params['address2'] . "</td></tr>" . 
-			"<tr><td>City</td><td>" . $params['city'] . "</td></tr>" . 
-			"<tr><td>State/Province</td><td>" . $params['state'] . "</td></tr>" . 
-			"<tr><td>Zip/Postal code</td><td>" . $params['zip_code'] . "</td></tr>" . 
-			"<tr><td>Home Phone</td><td>" . $params['home_phone'] . "</td></tr>" . 
-			"<tr><td>Mobile Phone</td><td>" . $params['mobile'] . "</td></tr>" . 
-			"<tr><td>Employment status</td><td>" . $params['employment_status'] . "</td></tr>" . 
-			"<tr><td>Position</td><td>" . $params['position'] . "</td></tr>" . 
-			"<tr><td>Name of school/employer</td><td>" . $params['org_name'] . "</td></tr>" . 
-			"<tr><td>School/Company address 1</td><td>" . $params['org_address1'] . "</td></tr>" . 
-			"<tr><td>School/Company address 2</td><td>" . $params['org_address2'] . "</td></tr>" . 
-			"<tr><td>School/Company City</td><td>" . $params['org_city'] . "</td></tr>" . 
-			"<tr><td>School/Company State/Province</td><td>" . $params['org_state'] . "</td></tr>" . 
-			"<tr><td>School/Company Zip/Postal code</td><td>" . $params['org_zip_code'] . "</td></tr>" . 
-			"<tr><td>School/Company Phone</td><td>" . $params['org_phone'] . "</td></tr>" . 
-			"<tr><td>Passport Number</td><td>" . $params['passport_number'] . "</td></tr>" . 
-			"<tr><td>Issued at/Issuing authority</td><td>" . $params['issue_authority'] . "</td></tr>" . 
-			"<tr><td>Date of issue</td><td>" . $params['date_of_issue'] . "</td></tr>" . 
-			"<tr><td>Expiration date</td><td>" . $params['expiration_date'] . "</td></tr>" . 
-			"</table></body></html>";
-
-		$to = EMAIL_ADDR; //Recipient Email Address
-
-		$subject = "Visa Application - " . $params['first_name'] . " " . $params['last_name']; //Email Subject
-
-		$headers = "From: " . $params['email'] . "\r\nReply-To: " . $params['email'];
-
-		$random_hash = md5(date('r', time()));
-
-		$mime_boundary = "==Multipart_Boundary_x{$random_hash}x";
-
-		// headers for attachment 
-		$headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
-
-		$files = $params['attached'];
-
-		// multipart boundary 
-		$message = "This is a multi-part message in MIME format.\n\n" . "--{$mime_boundary}\n"
-		           . "Content-Type: text/html; charset=\"iso-8859-1\"\n" . 
-		             "Content-Transfer-Encoding: 7bit\n\n" . $htmlbody . "\n\n";
-		$message .= "--{$mime_boundary}\n";
-
-		foreach ($files as $key => $value) {
-			if($value['size'] > 0) {
-				$attachment = chunk_split(base64_encode(file_get_contents($value['tmp_name']))); // Set your file path here
-
-				$name = $value['name'];
-
-				$message .= "Content-Type: {\"application/octet-stream\"};\n" . " name=\"{$name}\"\n" . 
-					"Content-Disposition: attachment;\n" . " filename=\"{$name}\"\n" . 
-			    	"Content-Transfer-Encoding: base64\n\n" . $attachment . "\n\n";
-			    $message .= "--{$mime_boundary}\n";
-			}
-
-			//include attachment
-			// $message .= "--PHP-mixed-$random_hash\r\n"."Content-Type: application/zip; name=\"" . substr($value, strripos($value, '/')+1) . "\"\r\n"."Content-Transfer-Encoding: base64\r\n"."Content-Disposition: attachment\r\n\r\n";
-			// $message .= $attachment;
-			// $message .= "/r/n--PHP-mixed-$random_hash--";
-		}
-
-		//send the email
-		return $mail = mail($to, $subject , $message, $headers);
-
-	}
-
 	public function contact_submit($params=array()) {
 		$mail = new \helpers\phpmailer\mail();
 
@@ -119,7 +29,97 @@ class glt extends \core\model {
 			"email_sent"=>$email_sent,
 		);
 
-		$this->_db->insert('contact', $db_params);
+		$this->_db->insert('contact', $db_params);	
+
+		return $this->_db->lastInsertId('id');
+	}
+
+	public function tax_service_submit($params=array()) {
+		$mail = new \helpers\phpmailer\mail();
+
+		$mail->setFrom(EMAIL_ADDR, SITETITLE);
+		$mail->addAddress(EMAIL_ADDR);
+		$mail->subject('[' . SITETITLE . '] A New Tax Service Form Has Been Submitted.');
+
+		$message = '<table style="border:none"><tr><td style="width:240px;padding:5px 8px;"><b>Name</b></td><td>' . $params['name'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>Email</b></td><td>' . $params['email'] . '</td></tr>' .
+			'<tr><td style="width:240px;padding:5px 8px;"><b>Phone</b></td><td>' . $params['phone'] . '</td></tr>' .
+			'<tr><td style="width:240px;padding:5px 8px;"><b>1. # of T4s and other T slips:</b></td><td>' . $params['num_of_t_slip'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>2. Any self-employment income?</b></td><td>' . $params['self_employment_income'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>2-1. If Yes, amount of revenues:</b></td><td>' . $params['amount_of_revenues'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>3. Do you own your own home?</b></td><td>' . $params['own_home'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>4. Were you a student in the tax year?</b></td><td>' . $params['were_you_student'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>5. Did you make any RRSP contributions?</b></td><td>' . $params['rrsp_contribution'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>6. Did you SELL any stocks and/or bonds?</b></td><td>' . $params['sell_stock'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>7. Did you receive any rental income from real estate?</b></td><td>' . $params['rental_income_from_real_estate'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>7-1. If Yes, how many properties and what provinces are they in?</b></td><td>' . $params['property'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>8. Did you have $100,000 or more in foreign assets?</b></td><td>' . $params['foreign_asset'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>9. If you are not a Canadian Citizen or Permanent Resident, what is your immigration status and/or type of Visa:</b></td><td>' . $params['immigration_status'] . '</td></tr>' . 
+			'<tr><td style="width:240px;padding:5px 8px;"><b>10. Please list any other income and tax credits not mentioned above:</b></td><td>' . $params['other_income_tax_credit'] . '</td></tr>' . 
+			'</table>';
+
+		$mail->body($message);
+		$email_sent = $mail->send();
+
+		$db_params=array(
+			"name"=>$params['name'],
+			"email"=>$params['email'],
+			"phone"=>$params['phone'],
+			"num_of_t_slip"=>$params['num_of_t_slip'],
+			"self_employment_income"=>$params['self_employment_income'],
+			"amount_of_revenues"=>$params['amount_of_revenues'],
+			"own_home"=>$params['own_home'],
+			"were_you_student"=>$params['were_you_student'],
+			"rrsp_contribution"=>$params['rrsp_contribution'],
+			"sell_stock"=>$params['sell_stock'],
+			"rental_income_from_real_estate"=>$params['rental_income_from_real_estate'],
+			"property"=>$params['property'],
+			"foreign_asset"=>$params['foreign_asset'],
+			"immigration_status"=>$params['immigration_status'],
+			"other_income_tax_credit"=>$params['other_income_tax_credit'],
+			"email_sent"=>$email_sent,
+		);
+
+		$this->_db->insert('tax_service', $db_params);
+
+		return $this->_db->lastInsertId('id');
+	}
+
+	public function noncanadians_submit($params=array()) {
+		$mail = new \helpers\phpmailer\mail();
+
+		$mail->setFrom(EMAIL_ADDR, SITETITLE);
+		$mail->addAddress(EMAIL_ADDR);
+		$mail->subject('[' . SITETITLE . '] A New Non-Canadians Form Has Been Submitted.');
+
+		$message = '<table style="border:none">' . 
+			'<tr><td style="width:200px;height:24px;"><b>Firstname</b></td><td>' . $params['firstname'] . '</td></tr>' . 
+			'<tr><td style="width:200px;height:24px;"><b>Lastname</b></td><td>' . $params['lastname'] . '</td></tr>' . 
+			'<tr><td style="width:200px;height:24px;"><b>Email</b></td><td>' . $params['email'] . '</td></tr>' .
+			'<tr><td style="width:200px;height:24px;"><b>Phone</b></td><td>' . $params['phone'] . '</td></tr>' .
+			'<tr><td style="width:200px;height:24px;"><b>SIN or ITN</b></td><td>' . $params['sin'] . '</td></tr>' .
+			'<tr><td style="width:200px;height:24px;"><b>Birthdate</b></td><td>' . $params['birthdate'] . '</td></tr>' .
+			'<tr><td style="width:200px;height:24px;"><b>When did you arrive in Canada</b></td><td>' . $params['arrived_at'] . '</td></tr>' . 
+			'<tr><td style="width:200px;height:24px;"><b>Were you working in Canada</b></td><td>' . $params['worked'] . '</td></tr>' . 
+			'<tr><td style="width:200px;height:24px;"><b>How much money did you earn in Canada</b></td><td>' . $params['earned'] . '</td></tr>' . 
+			'<tr><td style="width:200px;height:24px;"><b>How much rent did you paid during the year</b></td><td>' . $params['rent'] . '</td></tr></table>';
+
+		$mail->body($message);
+		$email_sent = $mail->send();
+
+		$db_params=array(
+			"firstname"=>$params['firstname'],
+			"lastname"=>$params['lastname'],
+			"email"=>$params['email'],
+			"phone"=>$params['phone'],
+			"arrived_at"=>$params['arrived_at'],
+			"worked"=>$params['worked'],
+			"earned"=>$params['earned'],
+			"rent"=>$params['rent'],
+			"email_sent"=>$email_sent,
+		);
+
+		$this->_db->insert('noncanadians', $db_params);
 		return $this->_db->lastInsertId('id');
 	}
 }

@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>corporate">Corporate</a></li>
-								<li class="active">Annual Payroll</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>corporate"><?=$GLOBALS['glt_nav']['3']['main']['corporate']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['3']['sub']['payroll']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Annual Payroll</h1>
+							<h1 class="page-title"><?=$data['glt_annual_payroll']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
@@ -49,9 +49,7 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<p>
-											At year end it is the company's obligation to CRA and employees to reconcile total payroll and source deductions. 
-											This annual exercise is important to accuracy determine the total payroll amount, and to ensure the company's source deduction records vs remittances are up to date. 
-											Employees also need to be issued accurate T4's 2 months after year end to ensure they are able to file their personal taxes on time.
+											<?=$data['glt_annual_payroll']['body_1']?>
 										</p>
 									</div>
 								</div>

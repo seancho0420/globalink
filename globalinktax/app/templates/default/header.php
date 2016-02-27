@@ -136,25 +136,22 @@ $current_page = url::lastsegment(url::segments());
 
 									<div class="col-sm-3">
 										<address>
-											40m North of Yonge/Sheppard Subway Station <br>
-											Monday to Friday: 9:30am-6pm, <br>
-											Saturday: 11am-3pm, <br>
-											Sunday: Closed
+											<?=$GLOBALS['glt_address'];?>
 										</address>
 									</div>
 
 									<div class="space-10 visible-xs-block"></div>
 
 									<div class="col-sm-3">
-										<form class="form">
+										<!-- <form class="form">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-search"></i></span>
 												<input type="text" class="form-control" id="search" name="search" placeholder="search">
 											</div>
-										</form>
+										</form> -->
 
 										<div class="language-btn-group">
-											<a href="<?=DIR?>"><span class="flag-icon flag-icon-ca"></span></a>
+											<a href="http://globalinktax.com"><span class="flag-icon flag-icon-ca"></span></a>
 											<a href="http://globalinktax.com/cn"><span class="flag-icon flag-icon-cn"></span></a>
 											<a href="http://globalinktax.com/kr"><span class="flag-icon flag-icon-kr"></span></a>
 										</div>
@@ -318,21 +315,69 @@ $current_page = url::lastsegment(url::segments());
 											<div class="collapse navbar-collapse" id="navbar-collapse-1">
 												<!-- mega-menu start -->
 												<ul class="nav navbar-nav">
-													<!-- <li class="<?=$current_page == '' ? 'active' : '' ?>">
-														<a href="<?=DIR?>">Home</a> -->
-														<!-- <ul class="dropdown-menu">
-															<li><a href="index.html">Home - Default</a></li>
-															<li><a href="index-2.html">Home - 2</a></li>
-															<li><a href="index-3.html">Home - 3</a></li>
-															<li><a href="index-4.html">Home - 4</a></li>
-															<li><a href="index-5.html">Home - 5</a></li>
-															<li><a href="index-one-page.html">One Page Version</a></li>
-															<li><a href="index-boxed-slideshow.html">Home - Boxed Slider</a></li>
-															<li class="active"><a href="index-no-slideshow.html">Home - Without Slider</a></li>
-														</ul> -->
-													<!-- </li> -->
+													<?php
+													foreach ($GLOBALS['glt_nav'] as $key => $value) {
+														$active = '';
+														$nav_main_url = '';
+														$nav_main_value = '';
 
-													<li class="<?=$current_page == '' ? 'active' : '' ?>">
+														// if(strpos($value['main'], ' ') !== false) {
+														// 	$nav_main_url = strtolower(substr($value['main'], 0, strpos($value['main'], ' ')));
+														// } else {
+														// 	$nav_main_url = strtolower($value['main']) == 'home' ? '' : strtolower($value['main']);
+														// }
+
+														// loop one time only
+														foreach ($value['main'] as $main_key => $main_value) {
+															$nav_main_url = $main_key;
+															$nav_main_value = $main_value;
+														}
+
+														if($key == '1') {
+															$nav_main_url = '';
+														}
+
+														if(sizeof($value['sub']) > 0) {
+															if(array_key_exists($current_page, $value['sub']) !== FALSE) {
+																$active = 'active';
+															}
+														} else {
+															if($current_page == $nav_main_url) {
+																$active = 'active';
+															}
+														}
+
+													?>
+
+													<li class="<?=$active?> <?=sizeof($value['sub']) > 0 ? 'dropdown' : ''?>">
+														<a href="<?=DIR . $nav_main_url?>" <?=sizeof($value['sub']) > 0 ? 'class="dropdown-toggle" data-toggle="dropdown"' : ''?>><?=$nav_main_value?></a>
+														<?php 
+															if(sizeof($value['sub']) > 0) { 
+														?>
+															<ul class="dropdown-menu">
+																<?php foreach ($value['sub'] as $sub_key => $sub_value) { ?>
+																	<li class="<?=$current_page == $sub_key ? 'active' : ''?>">
+																	<?php
+																		if($sub_key == $nav_main_url) {
+																			$sub_url = $sub_key;
+																		} else {
+																			$sub_url = $nav_main_url . '/' . $sub_key;
+																		}
+																	?>
+																		<a href="<?=DIR . $sub_url?>">
+																			<?=$sub_value?>
+																		</a>
+																	</li>
+																<?php } ?>
+															</ul>
+														<?php } ?>
+													</li>
+
+													<?php
+													}
+													?>
+
+													<!-- <li class="<?=$current_page == '' ? 'active' : '' ?>">
 														<a href="<?=DIR?>">Home</a>
 													</li>
 
@@ -375,7 +420,7 @@ $current_page = url::lastsegment(url::segments());
 
 													<li class="<?=$current_page == 'contact' ? 'active' : '' ?>">
 														<a href="<?=DIR?>contact">Contact</a>
-													</li>
+													</li> -->
 												</ul>
 												<!-- mega-menu end -->
 											</div>

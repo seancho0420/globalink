@@ -19,8 +19,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li class="active">Business Startup</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['4']['main']['business']?></li>
 							</ol>
 						</div>
 					</div>
@@ -40,25 +40,15 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Business Startup</h1>
+							<h1 class="page-title"><?=$data['glt_business_startup']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="row">
 								<div class="col-xs-12 animated fadeInUpSmall">
-									<p>
-										Choosing to start a business and which type of ownership structure is a big step for all business owners. 
-										It is important to consider the personal liability, business name protection, tax advantages, registration or filing costs, nature of the business, where it operates, the anticipated sales volume, etc. when deciding which structure to choose. 
-									</p>
-									<p>
-										Businesses can choose from Sole Proprietorship, Partnership or Corporations. Each structure has advantages and disadvantages. 
-										Before you decide which business form is best, you should consider such aspects as. 
-									</p>
-									<p>
-										Incorporation offers your business a number of advantages including business name protection, transferability of business ownership, limited liability and possible tax advantages. 
-										A corporation can be incorporated federally or provincially. 
-										The advances and disadvantages are listed as follows:
-									</p>
+									<?php foreach ($data['glt_business_startup']['body_1']['content_1'] as $key => $value) { ?>
+										<p><?=$value?></p>
+									<?php } ?>
 								</div>
 							</div>
 
@@ -67,89 +57,42 @@
 									<div class="table-responsive">
 										<table class="table table-striped table-bordered">
 											<thead>
-												<th class="text-center" style="width:50%">
-													ONTARIO INCORPORATION
-												</th>
-												<th class="text-center">
-													FEDERAL INCORPORATION
-												</th>
+												<?php foreach ($data['glt_business_startup']['body_1']['table']['tr_1']['td'] as $key => $value) { ?>
+													<th class="text-center" style="width:50%">
+														<?=$value['content']?>
+													</th>
+												<?php } ?>
 											</thead>
 											<tbody>
-												<tr class="text-center">
-													<td><strong>ADVANTAGES</strong></td>
-													<td><strong>ADVANTAGES</strong></td>
-												</tr>
-												<tr>
-													<td>
-														<p>Some advantages of incorporating under the Ontario Business Corporations Act are:</p>
-														<ul>
-															<li>
-																Name selection is self-policing
-															</li>
-															<li>
-																Name only needs to be available under Ontario laws
-															</li>
-															<li>
-																Faster incorporation turnaround time 
-															</li>
-															<li>
-																No government fee for Form 1 filings under the Corporations Information Act (Initial Return, Notice of Change, and Annual Return)
-															</li>
-														</ul>
-													</td>
-													<td>
-														<p>Some advantages of incorporating under the Canada Business Corporations Act are:</p>
-														<ul>
-															<li>
-																Name decision by government examiners based on availability across Canada
-															</li>
-															<li>
-																Enhanced name protection
-															</li>
-															<li>
-																Increased global recognition of federal charter for businesses doing business outside Canada and exporters
-															</li>
-															<li>
-																Ability to register in every province
-															</li>
-															<li>
-																Lower government incorporation fee
-															</li>
-														</ul>
-													</td>
-												</tr>
+												<?php 
+													foreach ($data['glt_business_startup']['body_1']['table'] as $key => $value) { 
+														if($key != 'tr_1') {
+															if($key == 'tr_2' || $key == 'tr_4') {
+												?>
+														<tr class="text-center">
+															<?php foreach ($value['td'] as $td_key => $td_value) { ?>
+																<td><strong><?=$td_value['content']?></strong></td>
+															<?php } ?>
+														</tr>
+															<?php } else { ?>
+														<tr>
+															<?php foreach ($value['td'] as $td_key => $td_value) { ?>
+															<td>
+																<p><?=$td_value['content']?></p>
+																<ul>
+																	<?php foreach ($td_value['list'] as $list_key => $list_value) { ?>
+																		<li><?=$list_value?></li>
+																	<?php } ?>
+																</ul>
+															</td>
+															<?php } ?>
+														</tr>
 
-												<tr class="text-center">
-													<td><strong>DISADVANTAGES</strong></td>
-													<td><strong>DISADVANTAGES</strong></td>
-												</tr>
-												<tr>
-													<td>
-														<p>Some disadvantages include:</p>
-														<ul>
-															<li>
-																Higher government incorporation fee
-															</li>
-														</ul>
-													</td>
-													<td>
-														<p>Some disadvantages are:</p>
-														<ul>
-															<li>
-																Finding an available name is more difficult
-															</li>
-															<li>
-																Name decision made by government examiners
-															</li>
-															<li>
-																Longer processing time (1- 2 days)
-															</li>
-															<li>
-																Government fees associated with annual filings (Address changes) $20
-															</li>
-														</ul>
-													</td>
-												</tr>
+												<?php 
+															}
+														}
+													} 
+												?>
 											</tbody>
 										</table>
 									</div>
@@ -157,9 +100,9 @@
 							</div>
 
 							<div class="row">
-								<div class="col-xs-12">
+								<div class="col-xs-12 animated fadeInDownSmall">
 									<p>
-										Let us help you determine which structure is best for your business and how to start your business right, right from the beginning.
+										<?=$data['glt_business_startup']['body_2']['content']?>
 									</p>
 								</div>
 							</div>

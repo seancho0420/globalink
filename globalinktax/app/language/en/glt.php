@@ -1,643 +1,419 @@
 <?php
 
 return array(
-	"pardons_in_landing"=>array(
-		"The omnibus crime bill, known as the Safe Streets and Communities act, proposed a number of changes to the Canadian legal system, many of them directly affecting anyone looking for a pardon. In addition to other changes, this act removed the term “pardon” and replaced it with “record suspension.” As well, the process - and your eligibility to receive a record suspension - were made increasingly difficult. Despite an outraged public, the bill received royal assent on March 13, 2012"
-	),
+	"glt_address"=>"40m North of Yonge/Sheppard Subway Station<br>Monday to Friday: 9:30am-6pm,<br>Saturday: 11am-3pm,<br>Sunday: Closed",
 
-	"pardons_in_pardons"=>array(
-		"1"=>"A 'Record Suspension' is the same as a 'Pardon'. Recently, the Canadian government replaced the term 'Pardon' with 'Record Suspension' when they made changes to the Criminal Records Act. It's generally accepted that the name change was intended to show more respect to the victims of crime who may not feel justice in the word 'Pardon'.",
-		"2"=>"Regardless of which term you use, 'Pardon' or 'Record Suspension', the effect is the same: your criminal record is permanently sealed from the public record, essentially giving you a fresh start at living life as if you didn't have a criminal record.",
-	),
-
-	"waivers_in_waivers"=>array(
-		"1"=>"A U.S Entry Waiver is a legal document issued by the U.S. Department of Homeland Security which grants advance permission for the applicant to enter the United States for a period of time. Most Canadians with a criminal record require a Waiver before entering the U.S.",
-		"2"=>"Once a traveler has a valid U.S. Waiver, they are free to enter the United States an unlimited number of times via air or land regardless of their criminal record.",
-	),
-
-	"faqs"=>array(
+	"glt_nav"=>array(
 		"1"=>array(
-			"question"=>"What is a Pardon?",
-			"answer"=>"A Canadian Pardon (also known as a \"Record Suspension\"), is granted by the government of Canada to indicate that your criminal record has been separated from publicly visible criminal charges in the national criminal record database.  When you receive a Pardon, no one can view your criminal record unless they get written permission from you or the Public Safety Minister of Canada. In summary, a Pardon gives you a fresh start at your criminal record.",
+			"main"=>array(
+				"home"=>"Home",
+			),
+			"sub"=>array(
+			),
 		),
 		"2"=>array(
-			"question"=>"What are the Benefits of a Pardon?",
-			"answer"=>"A criminal record can negatively affect your life in a number of ways. A record can make it more difficult to find a job, get a promotion, travel abroad, do volunteer work, enroll in education programs, immigrate, get custody of a child, rent an apartment and much more.  The ability to seal your criminal record from public foresight is a privilege truly unique to Canada – the vast majority of criminal record holders elsewhere in the world must live with the full consequences of their record for the rest of their lives.",
+			"main"=>array(
+				"personal"=>"Personal",
+			),
+			"sub"=>array(
+				"personal"=>"Personal Tax",
+				"express"=>"Express Personal Tax",
+				"personal_issues"=>"Personal Tax Issues",
+				"noncanadians"=>"Non Canadian Tax",
+				"us"=>"US Personal Tax Return",
+			),
 		),
 		"3"=>array(
-			"question"=>"How Long Will it Take to Get a Pardon?",
-			"answer"=>"You can expect a total processing time of approximately 6-18 months. Factors which can affect the total timeline include the length and complexity of your record, as well as the number of places you were charged.<br><br>Each application must go through a specific nine (9) step legal process as specified by the Criminal Records Act in Canada. If any one of these steps is completed incorrectly or in the wrong timeline your application can be delayed for a significant amount of time or even become void.<br><br>Once your application has been completed by Canadian Wide Pardons, it will be submitted to the Canadian Parole Board for their independent review and decision. Canada Wide Pardons has a proven and systematic system to compile your application in the shortest amount of time.",
+			"main"=>array(
+				"corporate"=>"Corporate",
+			),
+			"sub"=>array(
+				"corporate"=>"T2-Annual Corporate Tax",
+				"hst"=>"HST Return",
+				"payroll"=>"Annual Payroll",
+				"financial_statement"=>"Financial Statement Preparation",
+				"business_issues"=>"Business Tax Issues",
+			),
 		),
 		"4"=>array(
-			"question"=>"Can You Guarantee My Pardon?",
-			"answer"=>"No person or organization in Canada can guaranteed success of your application, since it is the Canadian Parole Board that ultimately makes the decision on your application. However, using an highly experienced accredited application firm like Canada Wide Pardons can maximize your opportunity for success.",
+			"main"=>array(
+				"business"=>"Business Startup",
+			),
+			"sub"=>array(
+			),
 		),
 		"5"=>array(
-			"question"=>"What's the Total Cost of a Pardon?",
-			"answer"=>"There are two specific charges for obtaining a Pardon:<ol><li>The processing fee to complete the legal work on your application</li><li>The government’s submission fee</li></ol>The processing fee covers the work Canada Wide Pardons<ol><li>subpoena certified court documents</li><li>communicate with police detachments</li><li>complete your application</li></ol>The government’s submission fee of $631 is paid to the government when we submit your application to them.<br><br>The typical applicant can expect to pay between $1400-$1800 not including taxes. The total cost can vary depending on the length and complexity of the applicant's criminal record.",
+			"main"=>array(
+				"accounting"=>"Accounting Services",
+			),
+			"sub"=>array(
+				"accounting"=>"Business Plans",
+				"consultations"=>"Business Consultations",
+			),
 		),
 		"6"=>array(
-			"question"=>"Will a Pardon Allow Me to Travel to the United States?",
-			"answer"=>"No. Canadian Pardons are not recognized by US Customs & Border Authorities. You will most likely require a U.S Entry Waiver to travel to the U.S..",
-		),
-	),
-
-	"pardon_can_help_you_in"=>array(
-		"1"=>"Traveling to USA / other countries",
-		"2"=>"Adoption",
-		"3"=>"Job searches and career advancement",
-		"4"=>"Overseas marriage and spousal sponsorship",
-		"5"=>"Your ability to be bonded",
-		"6"=>"Working as a volunteer",
-		"7"=>"Rental approvals",
-		"8"=>"Child custody cases",
-		"9"=>"Working with kids",
-	),
-
-	"terms_and_conditions"=>array(
-		"1"=>"This is the official website of Canada Wide Pardons (“CWP”).",
-		"2"=>"This document outlines the Terms and Conditions effective in application to the use of this official website and any products, services or information (“Services”) available or advertised on the CWP website.",
-		"3"=>"By using this website or any of the products or services, you (“Applicant”) agree, without limitation or qualification, to be bound by all terms and conditions and any other alternative or additional terms, conditions, rules or policies (“Terms and Conditions”) of use or conduct contained within this document relating to the use of this website.",
-		"4"=>"Applicant is aware that Canada Wide Pardons reserves full rights to change, modify, add, remove, or update any content within this document or website in its entirety from time to time, at its sole discretion.",
-		"5"=>"Please check this document periodically as continued use of the Canada Wide Pardons Services and/or website means applicant agrees in full to all the Terms and Conditions herein.",
-		"6"=>"If applicant does not agree to the Terms and Conditions outlined in this document, applicant may not use this website or any products or services available or advertised by Canada Wide Pardons.",
-	),
-
-	"policies_and_information"=>array(
-		"1"=>"CWP is a private Pardons and US Waivers processing firm. CWP serves as an intermediary agency between the Parole Board of Canada, Department of Homeland Security, RCMP, US Government, and other government organizations to assist individuals to complete applications for Canadian Pardons, U.S. Entry Waivers, Record Destructions, Certified criminal record checks and others. CWP uses RCMP accredited fingerprints via digital and Ink & Roll services across Canada. CWP does not offer or provide legal advice. For legal advice, please contact a lawyer.",
-		"2"=>"CWP guarantees to work to the full extent of their ability to assist applicants completing applications for a Canadian Pardon, U.S. Entry Waiver, Record Destruction, Canadian Passport, Certified criminal record check and others, but it does not approve or deny such applications.",
-		"3"=>"Files may be placed on hold may, at the discretion of CWP for non-payment or not following the payment schedule.",
-		"4"=>"CWP agrees to complete all work in an expeditious and timely manner, however, CWP has no control over government processing timelines and does not take responsibility for any processing time over the average time. Any estimated or quoted processing timelines provided are approximations and based on past experience.",
-		"5"=>"It is applicant’s responsibility to notify CWP immediately upon any ID, address, phone number, contact information, legal name change, which changes during CWP’s processing of the applicant’s file(s).",
-		"6"=>"CWP agrees that all information provided by applicant is strictly confidential and shall not, under any circumstance be sold, distributed or otherwise made available in any manner to any third-party organization outside of CWP.",
-		"7"=>"CWP cannot guarantee the success of any service related to a Canadian Pardon, US Entry Waiver. The success of this service is dependent on the decision of government bodies. CWP only guarantees to complete your application in as accurately and timely a manner as possible.",
-	),
-
-	"government_fees"=>array(
-		"1"=>"CWP’s application processing fees do not include applicable government submission fees such as the Homeland Security submission fee (currently $585 USD) for U.S. Entry Waiver applications, Parole Board of Canada submission fee (currently $631) for Canadian Pardon applications. The applicant is responsible for all applicable government fees.",
-	),
-
-	"general_provisions"=>array(
-		"1"=>"These Terms and Conditions constitute the entire agreement between CWP and applicant pertaining to applicant’s use of this CWP website, services, and content.",
-	),
-
-	"limitations_of_liability"=>array(
-		"1"=>"Applicant expressly understands and agrees that in no event shall CWP, including its affiliates and licensors, directors, employees, volunteers, subsidiaries, be liable for any damages whatsoever, including any direct, indirect, incidental, consequential, special or exemplary damages, and any damages for loss of profits, savings, goodwill or other intangible losses, regardless of whether CWP had been advised of or could have forseen the possibility of such damages, arising out of or in connection with a) the use, inability to use or performance of any of the services of this CWP site, or b) any unauthorized access to or modification to any of applicant’s content or transmissions, or c) any other matter relating to this CWP site or any of the services.",
-	),
-
-	"indemnification"=>array(
-		"1"=>"Applicant agrees to defend, indemnify, and hold harmless Canada Wide Pardons, its respective officers, directors, employees, agents, including all third parties mentioned on a CWP site, from and against any and all claims, actions or demands, including without limitation reasonable legal and accounting fees, resulting from or related to 1) applicant’s breach of any of these Terms and Conditions; 2) applicant’s access to or use of a CWP site or services.",
-	),
-
-	"trademarks_copyright"=>array(
-		"1"=>"All product, brand and company names, trademarks, logos, service marks and other names and icons provided on this site are trademarks or copyright of Canada Wide Pardons, and as such, the information, navigation and design of this site may not be reproduced without expressed written consent from CWP.",
-	),
-
-	"privacy_policy"=>array(
-		"1"=>"Canada Wide Pardons. (“CWP”) takes caution to ensure the discretion and privacy of client information. This information is collected solely for the purpose of successfully and accurately completing the relevant application information required to process Canadian Pardons, US Entry Waivers, Record Destructions and other applications. CWP does not sell, distribute or otherwise make available in any manner client information to any third-party organization outside of CWP.",
-		"2"=>"Disclosure of personal information by CWP is entirely limited to the appropriate government bodies or agencies required for CWP to facilitate the process retained by the client. Any consenting information received by CWP or the fact that an individual has retained or made any form of inquiry relating to CWP’s services is entirely confidential.",
-		"3"=>""
-	),
-
-	"citizen_countries" => array(
-		"Canada",
-		"China",
-		"South Korea"
-	),
-
-	"passport_photo_service" => array(
-		"1"=>array(
-			"title"=>"Accurate Quality Photos",
-			"content"=>"Photos done right the first time. High quality photo paper conform to all strict, current government regulations.",
-			"icon"=>"fa-photo",
-		),
-		"2"=>array(
-			"title"=>"Super Fast",
-			"content"=>"We use state of the art equipment, your photo is processed between 60-90 seconds.",
-			"icon"=>"fa-rocket",
-		),
-		"3"=>array(
-			"title"=>"Knowledgeable Friendly",
-			"content"=>"We know photo and visa requirements. We serve with a smile.",
-			"icon"=>"fa-smile-o",
-		),
-	),
-
-	"one_stop_visa_center" => array(
-		"title"=>"\"One Stop\" Visa Center",
-		"content"=>"Global Link Visa Center has been successfully providing visa services since 2012. We pride ourselves on personalized service, accurate and efficient visas.<br>Global Link specializes in Canada, US, UK, Schengen, China, Brazil, and Russia Visas. Please inquiry for other countries' visas."
-	),
-
-	"tab_info" => array(
-		"1"=>array(
-			"tab"=>"COMMUNICATE",
-			"title"=>"",
-			"content"=>"We communicate with the government so you don’t have to. And we communicate with you so that you know where we’re at.",
-			"icon"=>"fa-comments",
-		),
-		"2"=>array(
-			"tab"=>"PREPARE",
-			"title"=>"",
-			"content"=>"We prepare the application because we don’t expect you to. We may need your help from time to time but if we can do it for you we do it for you. After all, it’s what we do.",
-			"icon"=>"fa-magic",
-		),
-		"3"=>array(
-			"tab"=>"MONITOR",
-			"title"=>"",
-			"content"=>"We stay on the ball so you can focus on the other things. If the police are slow we get in touch. If the courts are slow we get in touch. If you aren’t getting us that signature we need, guess what, we get in touch.",
-			"icon"=>"fa-search",
-		),
-		"4"=>array(
-			"tab"=>"COMPLETE",
-			"title"=>"",
-			"content"=>"We don’t let up until your application is complete. Whether it’s a pardon, a waiver or just a simple background check. We want it done and we make every effort to make it that way.",
-			"icon"=>"fa-check",	
-		),
-	),
-
-	"passport_photo_price" => 'Passport/ID photos $15 for 2 pictures, every additional 2 pictures $10.<br>Digital Picture, Cropped to Your Specifications, Sent via Email or USB $20.',
-	
-	"passport_photo" => array(
-		"Algeria"=>array(
-			"photo"=>array(
-				"Visa"=>"51mm x 51mm",
+			"main"=>array(
+				"about"=>"About",
 			),
-			"embassy"=>"http://www.ambalgott.com",
-		),
-		"Argentina"=>array(
-			"photo"=>array(
-				"Visa"=>"40mm x 40mm",
-				"Passport"=>"40mm x 40mm",
+			"sub"=>array(
 			),
-			"embassy"=>"http://www.consargtoro.ca",
-		),
-		"Australia"=>array(
-			"photo"=>array(
-				"Visa"=>"35-40mm x 45-50mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.canada.embassy.gov.au/otwa/home.html",
-		),
-		"Austria"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.bmeia.gv.at/en/embassy/ottawa.html",
-		),
-		"Bangladesh"=>array(
-			"photo"=>array(
-				"Visa"=>"45mm x 35mm",
-				"Passport"=>"40mm x 50mm",
-			),
-			"embassy"=>"http://www.bdhcottawa.ca",
-		),
-		"Brazil"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://www.embajadadebrasil.org/brasil/embajadas/norte-america/canada.php",
-		),
-		"Bulgaria"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.mfa.bg/embassies/canada",
-		),
-		"Cambodia"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-			),
-			"embassy"=>"",
-		),
-		"Canada"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"50mm x 70mm",
-			),
-			"embassy"=>"",
-		),
-		"Chile"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"45mm x 45mm",
-			),
-			"embassy"=>"http://chileabroad.gov.cl/canada/en",
-		),
-		"China"=>array(
-			"photo"=>array(
-				"Visa"=>"33mm x 48mm",
-				"Passport"=>"33mm x 48mm",
-			),
-			"embassy"=>"http://ca.china-embassy.org/eng",
-		),
-		"Colombia"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"38mm x 51mm",
-			),
-			"embassy"=>"http://ottawa.consulado.gov.co",
-		),
-		"Czech Republic"=>array(
-			"photo"=>array(
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.mzv.cz/ottawa/en",
-		),
-		"Egypt"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"40mm x 60mm",
-			),
-			"embassy"=>"http://www.mfa.gov.eg/english/embassies/Egyptian_Embassy_Ottawa/Pages/default.aspx",
-		),
-		"Ethiopia"=>array(
-			"photo"=>array(
-				"Passport"=>"30mm x 40mm",
-				"Origin Card"=>"30mm x 40mm",
-			),
-			"embassy"=>"",
-		),
-		"EU Countries"=>array(
-			"photo"=>array(
-				"Shengen Visa"=>"35mm x 45mm",
-				"Shengen Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"",
-		),
-		"France"=>array(
-			"photo"=>array(
-				"Passport"=>"35mm x 45mm",
-				"Visa"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.ambafrance-ca.org",
-		),
-		"Germany"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.kanada.diplo.de/Vertretung/kanada/en/Startseite.html",
-		),
-		"Ghana"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://www.ghc-ca.com",
-		),
-		"Hong Kong"=>array(
-			"photo"=>array(
-				"Visa"=>"40mm x 50mm",
-				"Passport"=>"40mm x 50mm",
-			),
-			"embassy"=>"http://ca.china-embassy.org/eng",
-		),
-		"India"=>array(
-			"photo"=>array(
-				"Visa"=>"51mm x 51mm",
-				"Passport"=>"35mm x 35mm",
-				"Persons of Indian Origin"=>"35mm x 35mm",
-			),
-			"embassy"=>"http://www.hciottawa.ca/home.php",
-		),
-		"Indonesia"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 70mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://www.indonesia-ottawa.org",
-		),
-		"Iran"=>array(
-			"photo"=>array(
-				"Visa"=>"30mm x 40mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"",
-		),
-		"Israel"=>array(
-			"photo"=>array(
-				"Visa"=>"51mm x 51mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://embassies.gov.il/ottawa/AboutTheEmbassy/Pages/About-the-embassy.aspx",
-		),
-		"Italy"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"40mm x 40mm",
-			),
-			"embassy"=>"http://www.ambottawa.esteri.it/Templates/HomePage.aspx?NRMODE=Published&NRNODEGUID=%7b904F6A07-9A02-452B-AFDE-5C5DC09C1C09%7d&NRORIGINALURL=%2fAmbasciata_Ottawa&NRCACHEHINT=NoModifyGuest",
-		),
-		"Jamaica"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.jhcottawa.ca",
-		),
-		"Japan"=>array(
-			"photo"=>array(
-				"Visa"=>"45mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.ca.emb-japan.go.jp",
-		),
-		"Language Tests"=>array(
-			"photo"=>array(
-				"IELTS, TOEFL, TOEIC, MELAB, COPE"=>"30-50mm x 30-70mm",
-			),
-			"embassy"=>"",
-		),
-		"Laos"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-			),
-			"embassy"=>"",
-		),
-		"Malaysia"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"35mm x 50mm",
-			),
-			"embassy"=>"http://www.kln.gov.my/web/can_ottawa/home",
-		),
-		"Mexico"=>array(
-			"photo"=>array(
-				"Visa"=>"38mm x 38mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://embamex.sre.gob.mx/canada_eng",
-		),
-		"Myanmar"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 70mm",
-				"Passport"=>"50mm x 70mm",
-			),
-			"embassy"=>"http://www.meottawa.org",
-		),
-		"Nepal"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://www.nepalembassy.ca",
-		),
-		"Netherlands"=>array(
-			"photo"=>array(
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://canada.nlembassy.org",
-		),
-		"New Zealand"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.nzembassy.com/canada",
-		),
-		"Pakistan"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"38mm x 51mm",
-			),
-			"embassy"=>"http://www.pakmission.ca",
-		),
-		"Philippines"=>array(
-			"photo"=>array(
-				"Visa"=>"40mm x 50mm",
-			),
-			"embassy"=>"http://www.philcongen-toronto.com",
-		),
-		"Poland"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.ottawa.msz.gov.pl/en",
-		),
-		"Russia"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.rusembassy.ca",
-		),
-		"Saudi Arabia"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"40mm x 60mm",
-			),
-			"embassy"=>"http://embassies.mofa.gov.sa/sites/canada/EN/Pages/default.aspx",
-		),
-		"School Application"=>array(
-			"photo"=>array(
-				"Private, Medical, Dental, Law School"=>"50mm x 70mm",
-			),
-			"embassy"=>"",
-		),
-		"Senegal"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://www.ambsencanada.org",
-		),
-		"Slovenia"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://ottawa.embassy.si",
-		),
-		"South Africa"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.southafrica-canada.ca",
-		),
-		"South Korea"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://can-ottawa.mofa.go.kr/english/am/can-ottawa/main/index.jsp",
-		),
-		"Spain"=>array(
-			"photo"=>array(
-				"Passport"=>"30mm x 40mm",
-			),
-			"embassy"=>"http://www.exteriores.gob.es/Embajadas/OTTAWA/en/Pages/inicio.aspx",
-		),
-		"Switzerland"=>array(
-			"photo"=>array(
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"",
-		),
-		"Taiwan"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://ca.china-embassy.org/eng",
-		),
-		"Thailand"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 70mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"http://www.thaiembassy.ca/en",
-		),
-		"Trinidad Tobago"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"31mm x 41mm",
-			),
-			"embassy"=>"http://www.ttmissions.com",
-		),
-		"United Arab Emirates"=>array(
-			"photo"=>array(
-				"Visa"=>"43mm x 55mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://uae-embassy.ae/Embassies/ca",
-		),
-		"United Kingdom"=>array(
-			"photo"=>array(
-				"Visa"=>"35mm x 45mm",
-				"Passport"=>"35mm x 45mm",
-			),
-			"embassy"=>"https://www.gov.uk/government/world/organisations/british-high-commission-ottawa",
-		),
-		"United States"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm",
-				"Passport"=>"50mm x 50mm",
-			),
-			"embassy"=>"http://canada.usembassy.gov",
-		),
-		"Vietnam"=>array(
-			"photo"=>array(
-				"Visa"=>"50mm x 50mm or 40mm x 60mm",
-			),
-			"embassy"=>"http://vietem-ca.com",
-		),
-	),
-	
-	"residency" => array(
-		'United States', 
-		'Canada', 
-		'United Kingdom'
-	),
-
-	"testimonial" => array(
-		"1"=>array(
-			"body"=>"I didn't think cross the border to U.S. would be so strict. I had had a small incident many years ago, and I was turned back at the border. I retained the services of CWP for a US Waiver, and I am pleased that things went smoothly. Cheers!",
-			"info1"=>"George",
-			"info2"=>"Vancouver, BC",
-		),
-		"2"=>array(
-			"body"=>"I tried to do the pardon application on my own, but I became overwhelmed with the work involved. I'm so glad I found your CW Pardons!",
-			"info1"=>"William R.",
-			"info2"=>"Prince Rupert, BC",
-		),
-		"3"=>array(
-			"body"=>"Thank you so much for the great news. I couldn't have done it without your help. Thank you.",
-			"info1"=>"St. John's",
-			"info2"=>"NL",
-		),
-		"4"=>array(
-			"body"=>"I would have never thought I'd get my pardon in just five months – thanks to James and Carrie who made the process so smooth!",
-			"info1"=>"Nicole",
-			"info2"=>"Calgary, AB",
-		),
-		"5"=>array(
-			"body"=>"Excellent services, thank you James and Carrie. May the new year bring you good wishes!",
-			"info1"=>"Chen L.",
-			"info2"=>"Toronto, ON",
-		),
-		"6"=>array(
-			"body"=>"James, I've referred one of my close friends to your services. He was pleased with the way you handled his case. Kudos and thanks to you.",
-			"info1"=>"Jeffrey H.",
-			"info2"=>"Winnipeg, MB",
 		),
 		"7"=>array(
-			"body"=>"You guys are fantastic. Espicially James and the team, can't think of more caring and sincere people really wanting to help.",
-			"info1"=>"Muraz P.",
-			"info2"=>"Windsor, ON",
-		),
-		"8"=>array(
-			"body"=>"Thank you James for the speedy service. I live in a rural part of Saskatchewan and Canada Wide's online service was seamless!",
-			"info1"=>"Christopher P.",
-			"info2"=>"Regina, SK",
-		),
-		"9"=>array(
-			"body"=>"Merci from Montreal, I will not fear another security screening again.",
-			"info1"=>"Lionel A.",
-			"info2"=>"Montreal, QC",
-		),
-		"10"=>array(
-			"body"=>"I can't believe my pardon was granted so quickly! Everyone I spoke with said they paid their lawyers thousands of dollars and it took years to get their pardons. You got it in just a few months, and for a fraction of what they'd spent!",
-			"info1"=>"Jeff B.",
-			"info2"=>"Milton, ON",
+			"main"=>array(
+				"contact"=>"Contact",
+			),
+			"sub"=>array(
+			),
 		),
 	),
 
-	"employment_status" => array(
-		'Student', 
-		'Employed', 
-		'Self Employed', 
-		'Unemployed', 
-		'Retired'
-	),
-
-	"about_us" => array(
-		"1"=>array(
-			"paragraph"=>"Canada Wide Pardons has successfully processed hundreds of Pardons for our clients in the last few years. We pride ourselves on personalized service, accurate and speedy Pardons.",
-		),
-		"2"=>array(
-			"paragraph"=>"Canada Wide Pardons believes in providing honest, up front advice, reasonable fees for a high level of professional and detailed service, and efficient service.",
-		),
-		"3"=>array(
-			"paragraph"=>"Choose Canada Wide Pardons for your Pardon and/or US Waiver, you won't be disappointed!",
-		),
-	),
-
-	"our_team" => array(
-		"1"=>array(
-			"desc"=>"James has been helping clients attain Pardons, Record Suspensions, and US Waivers for the past 3 years. He manages our Pardons team and keeps them updates on the latest Pardons developments. His high attention to detail and efficient nature helps clients be successful in the shortest amount of time.",
-			"name"=>"James Y.",
-			"role"=>"Pardons and US Waiver Manager",
-		),
-		"2"=>array(
-			"desc"=>"Carrie has been helping clients attain Pardons, Record Suspensions, and US Waivers for the past 2 years. Her caring and compassionate approach allows clients to feel at ease with their case.",
-			"name"=>"Carrie Z.",
-			"role"=>"Pardons and US Waiver Specialist",
-		),
-		"3"=>array(
-			"desc"=>"Bill makes it his daily mission to make the Pardons and US Waiver process as smooth and painless as possible. He has been praised by our clients for being super attentive and caring of their cases and treating our clients like family.",
-			"name"=>"Bill Y.",
-			"role"=>"Pardons and US Waiver Specialist",
+	"glt_home"=>array(
+		"brief"=>array(
+			"1"=>array(
+				"title"=>"William Yeung, Canadian Certified Management Accountant, US Certified Public Accountant-Tax and Business Advisory",
+				"desc"=>"We are a full-service Accounting firm licensed in Ontario by the Chartered Professional Accountants of Ontario. We offer a broad range of services for individuals, business owners, and self-employed professionals. We are approachable, experienced, and friendly.",
+			),
+			"2"=>array(
+				"title"=>"Tax Services for Individuals",
+				"desc"=>"Maximize your return and minimize your taxes. Don’t pay more in taxes than you have to! Take full advantage of all deductions and credits with our tax planning, compliance, and tax preparation services. We are experienced in dealing with individuals, families, self-employed, rental income, overseas income or assets, students, US returns, etc…",
+			),
+			"3"=>array(
+				"title"=>"Accounting and Tax Service for Business",
+				"desc"=>"We provide comprehensive accounting and tax services for small to medium sized businesses. Whether your business is just starting off, to businesses that have been established that require the advice of an experienced accountant and business person. We handle all aspects of your accounting and finance, from bookkeeping to compilations and reviews, to corporation taxation, payroll services, and controllership.",
+			),
+			"4"=>array(
+				"title"=>"Business Advisory Services",
+				"desc"=>"In addition to being certified accountants, we are experienced entrepreneurs. Our principal Mr. Yeung, has founded and managed businesses in their startup and growth phases. He has also gone through acquisitions and divestitures of businesses. His experience and insight will help your business maximize its potential and avoid potential pitfalls.",
+			),
+			"5"=>array(
+				"title"=>"QuickBooks Implementation",
+				"desc"=>"We are able to help you implement QuickBooks in your company or another more efficient and cost effective system than your current system. Implementing a solid system will help your business report earnings more efficiently and accurately, avoid theft and fraud, and allow for better long term growth.",
+			),
 		),
 	),
 
-	"why_choose_us" => array(
-		"1"=>array(
-			"title"=>"Service",
-			"content"=>"Dedicated team specializing in Pardons and US Waivers.",
-			"icon"=>"fa-check",
+	"glt_personal_tax"=>array(
+		"title"=>"Personal Tax",
+		"body_1"=>array(
+			"As a Canadian resident, temporary worker in Canada, student studying in Canada, person with income in Canada, visitor with property in Canada, you have to file a Canadian tax return.",
+			"Tax Residents of Canada are subject to Canadian income tax on their world income. World income includes employment income, income from self-employment, income from investments, rental income, taxable capital gains, etc.",
+			"For individuals, the income tax return for the prior year is due April 30 of the following year e.g. for the 2014 tax year, your income tax return is due April 30, 2015.
+				It is best to file well before this date no matter what situation you are in. 
+				1) if you are entitled to a refund, it will ensure you get your refund sooner rather than later 
+				2) if you are entitled to Federal GST and Ontario Trillium Benefits, filing on time will ensure you get those benefits according to the government timeline 
+				3) if you are owing taxes, it helps you avoid penalties for late filing, and helps you determine how much you owe and to create a plan to pay the amount owing.",
+			"(June 15 if self-employed or the spouse of a self-employed) following each calendar year. 
+				Quarterly installments of income tax are required in some circumstances. 
+				Canada Customs and Revenue Agency will advise on these circumstances on an individual basis.",
 		),
-		"2"=>array(
-			"title"=>"Simplicity",
-			"content"=>"We make the process as simple as possible.",
-			"icon"=>"fa-magic",
+		"body_2"=>array(
+			"title"=>"Documents Required (General List)",
+			"content_1"=>"Below is a general list of documents required. It is not a complete list, as everyone’s situation is different, however if you are not sure if a certain document is required, please bring it to our office for us to review.",
+			"list"=>array(
+				"1"=>"Prior year’s Notice of Assessment and any other correspondence with CRA",
+				"2"=>"All information slips e.g. T3, T4, T4A, T5 slips",
+				"3"=>"TTC Metropasses",
+				"4"=>"Rental contracts and receipts",
+				"5"=>"Receipts for any deductions or credits you plan to claim. You should have the receipt as proof for any deductions or credits you plan to claim e.g. moving expenses, childcare expenses",
+				"6"=>"RRSP contributions",
+			),
+			"content_2"=>"If you have misplaced any of the documents above, speak to us for further guidance.",
 		),
-		"3"=>array(
-			"title"=>"Professionalism",
-			"content"=>"We will handle your case with professionalism and privacy, and serve with integrity and knowledge. ",
-			"icon"=>"fa-users",
+	),
+
+	"glt_express_personal_tax"=>array(
+		"title"=>"Express Personal Tax",
+		"body_1"=>array(
+			"content_1"=>"Global Link Tax provides fast and accurate personal tax returns. We will ensure you get all the credits you qualify for and make the process as simple as possible for you. Below are price ranges for common personal tax returns. If your personal tax return or issue is slightly more challenging, feel free to make an appointment with us to discuss further.",
+			"table"=>array(
+				"1"=>array(
+					"item"=>"Adult with Employment Income (1 T4 included)",
+					"price"=>"Starting from $50",
+				),
+				"2"=>array(
+					"item"=>"Family (2 T4’s included)",
+					"price"=>"Starting from $100",
+				),
+				"3"=>array(
+					"item"=>"Student-Full Time (T2202A included)",
+					"price"=>"$35",
+				),
+				"4"=>array(
+					"item"=>"Self Employed, Rental Income",
+					"price"=>"Starting from $100",
+				),
+				"5"=>array(
+					"item"=>"Retired/Adult with No Employment Income (T4P, T4RSP included)",
+					"price"=>"Starting from $35",
+				),
+			),
+			"content_2"=>"Thousands of successful tax returns filed the past 8 years with a near perfect accuracy rate. We pride ourselves in filing your taxes right the first time!",
+		),
+	),
+
+	"glt_personal_tax_issue"=>array(
+		"title"=>"Personal Tax Issues",
+		"body_1"=>array(
+			"content_1"=>"As a taxpayer, it’s always daunting to encounter tax issues with CRA. We have dealt with many different tax issues such as:",
+			"list"=>array(
+				"1"=>"CRA Audits",
+				"2"=>"Late or Unfiled Taxes",
+				"3"=>"Residency determinations",
+				"4"=>"Real Property Dispositions",
+				"5"=>"Challenging specific tax credits and benefits due",
+			),
+			"content_2"=>"At Global Link Tax we will explain difficult tax situations to you in simple language, we will take ownership of your case as if it were our own problem, and help you resolve the case as quickly and cost effectively as possible.",
+		),
+	),
+
+	"glt_us_personal_tax_return"=>array(
+		"title"=>"US Personal Tax Return",
+		"body_1"=>array(
+			"1"=>"For American Green card holders and all US citizens living and working abroad, it is mandatory to file a US tax return. Green card holders and all US citizens are required to file a US return, no matter where they live, as long as their income (earned in the US and abroad) is just over $9,000. Many people wrongly assume that because they have never owed money to the IRS, they simply don't have to file. Earning anything over $9,350 does require you to file, however.",
+			"2"=>"The US has treaties with many foreign countries that will reduce or even eliminate actual owed tax. You cannot take advantage of these benefits if you don't file.",
+			"3"=>"Taxpayers may also have to file a state return in addition to a federal return depending on which state you have moved from. Each US state sets its own rules regarding state taxes and expats. Some states demand that you file a state return, while others release you when you move away.",
+			"4"=>"At Global Link Tax, we will explain difficult US tax situations to you in simple and concise language. We will help you fulfill your US tax filing obligations to the IRS and ensure its done property. At Global Link, our principal accountant Mr. Yeung is a US Certified Public Accountant (CPA) and has helped many expats living in Canada file their Canadian and US tax returns.",
+		),
+	),
+
+	"glt_annual_corporate_tax"=>array(
+		"title"=>"T2-Annual Corporate Tax",
+		"body_1"=>array(
+			"1"=>"Canadian businesses are subject to Canadian corporate income taxes on their worldwide income. Depending on the type and location of products or services being offered, federal and/or provincial business taxes may apply to a corporation.",
+			"2"=>"Canadian controlled private corporations (CCPC) in which the majority of shareholders are Canadian residents are eligible for a reduction in the general tax rate.",
+			"3"=>"When calculating net income or profits, any reasonable expenses incurred to earn that income are generally deductible. However, for capital expenditures e.g. cars, machinery, property, those amounts must be capitalized and a portion may be deducted each year according to CRA's Capital Cost Allowance (CCA) guidelines.",
+			"4"=>"Several tax credits are available to reduce taxes payable, including the small business deduction, provincial tax credit, investment tax credit and the scientific research and development tax credit.",
+			"5"=>"Please make an appointment with our accountant for an in-depth analysis of your corporate return.",
+		),
+	),
+
+	"glt_hst_return"=>array(
+		"title"=>"HST Return",
+		"body_1"=>array(
+			"1"=>"If your business has a GST/HST number, you are required to file and remit collected GST/HST at least once a year. How often you have to file GST/HST returns depends on the length of your reporting period, which is based on the amount of your business's annual taxable sales.",
+			"2"=>"Usually when you register for a GST/HST number, your business will be assigned a reporting period and the Canada Revenue Agency will mail you a personalized GST/HST Return for Registrants at the appropriate time.",
+			"3"=>"GST/HST collected can be offset by input tax credits, also known as eligible business expenses that you paid GST/HST on.",
+			"4"=>"There are two ways to calculate your GST/HST owing or refund, the \"regular method\" and the \"quick method\". The quick method is popular for small businesses and certain professionals who can actually end up owing less GST/HST under that method. Come speak to us to see which method will save your business the most amount of money.",
+		),
+	),
+
+	"glt_annual_payroll"=>array(
+		"title"=>"Annual Payroll",
+		"body_1"=>"At year end it is the company's obligation to CRA and employees to reconcile total payroll and source deductions. This annual exercise is important to accuracy determine the total payroll amount, and to ensure the company's source deduction records vs remittances are up to date. Employees also need to be issued accurate T4's 2 months after year end to ensure they are able to file their personal taxes on time.",
+	),
+
+	"glt_financial_statement"=>array(
+		"title"=>"Financial Statement Preparation",
+		"body_1"=>"Financial statements often need to be prepared for stakeholders' review, financing, other regulatory purposes, etc… Global Link Tax can help with a review of the company's financial documents and compilation of its financial statements.",
+	),
+
+	"glt_business_tax_issues"=>array(
+		"title"=>"Business Tax Issues",
+		"body_1"=>array(
+			"content_1"=>"As a business owner, it's always daunting to encounter tax issues with CRA. We have dealt with many different business tax issues such as:",
+			"list"=>array(
+				"1"=>"CRA Audits",
+				"2"=>"Late or Unfiled Taxes",
+				"3"=>"Payroll source deduction reconciliations",
+				"4"=>"GST/HST refunds disallowed",
+				"5"=>"Challenging specific expenses and amounts disallowed",
+			),
+			"content_2"=>"At Global Link Tax we will explain difficult tax situations to you in simple language, we will take ownership of your case as if it were our own problem, and help you resolve the case as quickly and cost effectively as possible.",
+		),
+	),
+
+	"glt_business_startup"=>array(
+		"title"=>"Business Startup",
+		"body_1"=>array(
+			"content_1"=>array(
+				"1"=>"Choosing to start a business and which type of ownership structure is a big step for all business owners. It is important to consider the personal liability, business name protection, tax advantages, registration or filing costs, nature of the business, where it operates, the anticipated sales volume, etc. when deciding which structure to choose.",
+				"2"=>"Businesses can choose from Sole Proprietorship, Partnership or Corporations. Each structure has advantages and disadvantages. Before you decide which business form is best, you should consider such aspects as.",
+				"3"=>"Incorporation offers your business a number of advantages including business name protection, transferability of business ownership, limited liability and possible tax advantages. A corporation can be incorporated federally or provincially. The advances and disadvantages are listed as follows:",
+			),
+			"table"=>array(
+				"tr_1"=>array(
+					"td"=>array(
+						"1"=>array(
+							"content"=>"ONTARIO INCORPORATION",
+							"list"=>array(),
+						),
+						"2"=>array(
+							"content"=>"FEDERAL INCORPORATION",
+							"list"=>array(),
+						),
+					),
+				),
+				"tr_2"=>array(
+					"td"=>array(
+						"1"=>array(
+							"content"=>"ADVANTAGES",
+							"list"=>array(),
+						),
+						"2"=>array(
+							"content"=>"ADVANTAGES",
+							"list"=>array(),
+						),
+					)
+				),
+				"tr_3"=>array(
+					"td"=>array(
+						"1"=>array(
+							"content"=>"Some advantages of incorporating under the Ontario Business Corporations Act are:",
+							"list"=>array(
+								"1"=>"Name selection is self-policing",
+								"2"=>"Name only needs to be available under Ontario laws",
+								"3"=>"Faster incorporation turnaround time",
+								"4"=>"No government fee for Form 1 filings under the Corporations Information Act (Initial Return, Notice of Change, and Annual Return)",
+							),
+						),
+						"2"=>array(
+							"content"=>"Some advantages of incorporating under the Canada Business Corporations Act are:",
+							"list"=>array(
+								"1"=>"Name decision by government examiners based on availability across Canada",
+								"2"=>"Enhanced name protection",
+								"3"=>"Increased global recognition of federal charter for businesses doing business outside Canada and exporters",
+								"4"=>"Ability to register in every province",
+								"5"=>"Lower government incorporation fee",
+							),
+						),
+					),
+				),
+				"tr_4"=>array(
+					"td"=>array(
+						"1"=>array(
+							"content"=>"DISADVANTAGES",
+							"list"=>array(),
+						),
+						"2"=>array(
+							"content"=>"DISADVANTAGES",
+							"list"=>array(),
+						),
+					)
+				),
+				"tr_5"=>array(
+					"td"=>array(
+						"1"=>array(
+							"content"=>"Some disadvantages include:",
+							"list"=>array(
+								"1"=>"Higher government incorporation fee",
+							),
+						),
+						"2"=>array(
+							"content"=>"Some disadvantages are:",
+							"list"=>array(
+								"1"=>"Finding an available name is more difficult",
+								"2"=>"Name decision made by government examiners",
+								"3"=>"Longer processing time (1- 2 days)",
+								"4"=>"Government fees associated with annual filings (Address changes) $20",
+							),
+						),
+					)
+				),
+			),
+		),
+		"body_2"=>array(
+			"content"=>"Let us help you determine which structure is best for your business and how to start your business right, right from the beginning.",
+		),
+	),
+
+	"glt_business_plans"=>array(
+		"title"=>"Business Plans",
+		"body_1"=>array(
+			"1"=>"A business plan is a written description of your business's future, a document that tells what you plan to do and how you plan to do it. Business plans are inherently strategic. You start here, today, with certain resources and abilities. You want to get to a point in the future (usually three to five years out) at which time your business will have a different set of resources and abilities as well as greater profitability and increased assets. Your plan shows how you will get from here to there.",
+			"2"=>"Global Link has the business, marketing, management, and financial expertise to help you tailor a solid business plan. This plan will not only keep your vision and business on track, it will help illustrate your vision and implementation plans to partners, banks, other stakeholders, regulatory bodies, etc…",
+		),
+	),
+
+	"glt_business_consultations"=>array(
+		"title"=>"Business Consultations",
+		"body_1"=>array(
+			"1"=>"A business consultation can be used to inquire about a business problem, get a second opinion on a new business venture or financial matter, etc. At Global Link Tax, we have expertise with small and medium size business: financial analysis, business management, business strategy, operations, and various tax matters.",
+			"2"=>"Speak to us to arrange an appointment for a business consultation.",
+		),
+	),
+
+	"glt_about_us"=>array(
+		"title"=>"About Us",
+		"body_1"=>array(
+			"1"=>"Global Link Tax is a boutique accounting and tax firm with its office located in the heart of Toronto, Canada. Global Link Tax started in 2008 with humble beginnings as a home based business. As its client base gradually grew through word of mouth, Global Link moved into an office at the prime business area of Yonge and Sheppard in 2012. Global Link has helped thousands of successful individuals and business owners with their tax and business matters over the past 8 years.",
+			"2"=>"Global Link Tax serves working individuals, self-employed individuals, students, and small to medium size businesses with their accounting and tax needs. We believe in a positive, honest, and personalized approach.",
+		),
+		"body_2"=>array(
+			"title"=>"William Yeung, CPA-CMA (Ontario), CPA (Delaware)",
+			"content"=>array(
+				"1"=>"Mr. William Yeung has over 10+ years of successful of Business Management, Entrepreneurial, Canadian Corporate Taxation and Accounting, Real Estate and Business Consulting experience. As a Canadian business owner himself, he has a deep understanding of the Canadian small and medium size business environment and business needs. Mr. Yeung specializes in providing professional business and accounting consultation and tax service to small and medium size business owners and also serves individuals with tax issues.",
+				"2"=>"Mr. Yeung speaks fluent English, Mandarin and Cantonese.",
+			)
+		),
+	),
+	
+	"glt_contact"=>array(
+		"title"=>"Contact Us",
+		"addr"=>array(
+			"phone"=>"Phone",
+			"fax"=>"Fax",
+			"general_inquiries"=>"General Inquiries",
+		),
+		"message"=>"<strong>Submitted! </strong> We will contact you within 1 business day.",
+		"body"=>array(
+			"title"=>"Getting Started with Global Link Tax Services:",
+			"content"=>array(
+				"1"=>"We understand that whether or not you have worked with an accounting firm in the past, you want to
+					know as much as possible about the pricing and processes at Global Link Tax Services. If you are 
+					interested in getting a price range for your personal tax returns, please complete the form below or 
+					e-mail or call us to schedule an in person or phone appointment to discuss your situation in detail.",
+				"2"=>"For business tax returns including partnerships and corporations, we usually need to see your prior 
+					year's tax return and/or your current year's books and records in order to quote you a price. Our 
+					initial consultations are always complementary, and there's never an obligation to proceed 
+					with Global Link Tax after we quote you a fee. Everything always stays confidential and we always 
+					return or destroy documents that we no longer need.",
+				"3"=>"If you choose to work with Global Link Tax, you're always welcome to make an appointment to come 
+					in, but that is NOT required. If it's more convenient for you, we are happy to handle everything via 
+					our e-mail, fax and/or the mail. We hope this makes you feel more comfortable about contacting 
+					Global Link Tax Services and we are always available at <a href='mailto:info@globalinktax.com'>info@globalinktax.com</a> 
+					or <a href='tel:416-225-8686'>416-225-8686</a>.",
+			),
+		),
+		"quote_form"=>array(
+			"title"=>"Please complete the following form so that Global Link Tax Services can quote you a price RANGE:",
+			"fullname"=>"Full Name",
+			"email"=>"Full Name",
+			"phone"=>"Phone",
+			"1"=>"1. # of T4s and other T slips",
+			"2"=>"2. Any self-employment income?",
+			"2-1"=>"2-1. If Yes, amount of revenues",
+			"3"=>"3. Do you own your own home?",
+			"4"=>"4. Were you a student in the tax year?",
+			"5"=>"5. Did you make any RRSP contributions?",
+			"6"=>"6. Did you SELL any stocks and/or bonds?",
+			"7"=>"7. Did you receive any rental income from real estate?",
+			"7-1"=>"7-1. If Yes, how many properties and what provinces are they in?",
+			"8"=>"8. Did you have $100,000 or more in foreign assets?",
+			"9"=>"9. If you are not a Canadian Citizen or Permanent Resident, what is your immigration status and/or type of Visa",
+			"10"=>"10. Please list any other income and tax credits not mentioned above",
+			"thankyou"=>"Thank you for completing this form. Please note we need to see all paperwork and information in order to quote EXACT prices. We will get back to you shortly.",
+			"submit"=>"Submit",
+			"yes_no_option"=>array(
+				"yes"=>"YES",
+				"no"=>"NO",
+			),
+		),
+		"contact_form"=>array(
+			"title"=>"Request a Consultation",
+			"name"=>"Name",
+			"email"=>"Email",
+			"phone"=>"Phone",
+			"best_time"=>"Best Time to Call or Meet",
+			"message"=>"Message",
+			"options"=>array(
+				"1"=>"Choose",
+				"2"=>"Anytime - Urgent",
+				"3"=>"Morning 9AM - Noon",
+				"4"=>"Afternoon Noon - 5PM",
+				"5"=>"Evening 5PM - 7PM",
+				"6"=>"Saturday 11AM - 3PM",
+			),
+			"submit"=>"Submit",
 		),
 	),
 );

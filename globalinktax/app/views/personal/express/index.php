@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>personal">Personal</a></li>
-								<li class="active">Express Personal Tax</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>personal"><?=$GLOBALS['glt_nav']['2']['main']['personal']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['2']['sub']['express']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,19 +41,14 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Express Personal Tax</h1>
+							<h1 class="page-title"><?=$data['glt_express_personal_tax']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="animated fadeInUpSmall">
 								<div class="row">
 									<div class="col-xs-12">
-										<p>
-											Global Link Tax provides fast and accurate personal tax returns. 
-											We will ensure you get all the credits you qualify for and make the process as simple as possible for you. 
-											Below are price ranges for common personal tax returns. 
-											If your personal tax return or issue is slightly more challenging, feel free to make an appointment with us to discuss further. 
-										</p>
+										<p><?=$data['glt_express_personal_tax']['body_1']['content_1']?></p>
 									</div>
 								</div>
 
@@ -62,26 +57,12 @@
 										<div class="table-responsive">
 											<table class="table table-striped table-bordered">
 												<tbody>
-													<tr>
-														<td style="width:60%">Adult with Employment Income (1 T4 included)</td>
-														<td>Starting from $50</td>
-													</tr>
-													<tr>
-														<td>Family (2 T4’s included)</td>
-														<td>Starting from $100</td>
-													</tr>
-													<tr>
-														<td>Student-Full Time (T2202A included)</td>
-														<td>$35</td>
-													</tr>
-													<tr>
-														<td>Self Employed, Rental Income</td>
-														<td>Starting from $100</td>
-													</tr>
-													<tr>
-														<td>Retired/Adult with No Employment Income (T4P, T4RSP included)</td>
-														<td>Starting from $35</td>
-													</tr>
+													<?php foreach ($data['glt_express_personal_tax']['body_1']['table'] as $key => $value) { ?>
+														<tr>
+															<td style="width:60%"><?=$value['item']?></td>
+															<td><?=$value['price']?></td>
+														</tr>	
+													<?php } ?>
 												</tbody>
 											</table>
 										</div>
@@ -91,7 +72,7 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<p>
-											Thousands of successful tax returns filed the past 8 years with a near perfect accuracy rate. We pride ourselves in filing your taxes right the first time!
+											<?=$data['glt_express_personal_tax']['body_1']['content_2']?>
 										</p>
 									</div>
 								</div>

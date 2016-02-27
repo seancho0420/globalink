@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>personal">Personal</a></li>
-								<li class="active">Personal Tax Issues</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>personal"><?=$GLOBALS['glt_nav']['2']['main']['personal']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['2']['sub']['personal_issues']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,35 +41,23 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Personal Tax Issues</h1>
+							<h1 class="page-title"><?=$data['glt_personal_tax_issue']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="row">
 								<div class="col-xs-12 animated fadeInUpSmall">
 									<p>
-										As a taxpayer, it’s always daunting to encounter tax issues with CRA. We have dealt with many different tax issues such as:
+										<?=$data['glt_personal_tax_issue']['body_1']['content_1']?>
 									</p>
 									<ul>
-										<li>
-											CRA Audits 
-										</li>
-										<li>
-											Late or Unfiled Taxes
-										</li>
-										<li>
-											Residency determinations
-										</li>
-										<li>
-											Real Property Dispositions
-										</li>
-										<li>
-											Challenging specific tax credits and benefits due
-										</li>
+										<?php foreach ($data['glt_personal_tax_issue']['body_1']['list'] as $key => $value) { ?>
+											<li><?=$value?></li>
+										<?php } ?>
 									</ul>
 
 									<p class="m-t-lg">
-										At Global Link Tax we will explain difficult tax situations to you in simple language, we will take ownership of your case as if it were our own problem, and help you resolve the case as quickly and cost effectively as possible. 
+										<?=$data['glt_personal_tax_issue']['body_1']['content_2']?>
 									</p>
 								</div>
 							</div>

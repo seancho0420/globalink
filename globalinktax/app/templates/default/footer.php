@@ -39,13 +39,30 @@ use helpers\assets;
 									<h2>Links</h2>
 									<nav>
 										<ul class="nav nav-pills nav-stacked">
-											<li><a href="<?=DIR?>">Home</a></li>
+										<?php 
+										$sitemap_link = $sitemap_value = '';
+
+										foreach ($GLOBALS['glt_nav'] as $key => $value) { 
+											foreach ($value['main'] as $main_key => $main_value) {
+												$sitemap_link = $main_key;
+												$sitemap_value = $main_value;
+
+												if($key == '1') {
+													$sitemap_link = '';
+												}
+											}
+										?>
+
+											<li><a href="<?=DIR . $sitemap_link?>"><?=$sitemap_value?></a></li>
+										<?php } ?>
+
+											<!-- <li><a href="<?=DIR?>">Home</a></li>
 											<li><a href="<?=DIR?>personal">Personal Tax</a></li>
 											<li><a href="<?=DIR?>corporate">Corporate Tax</a></li>
 											<li><a href="<?=DIR?>business">Business Startup</a></li>
 											<li><a href="<?=DIR?>accounting">Accounting Services</a></li>
 											<li><a href="<?=DIR?>about">About Us</a></li>
-											<li><a href="<?=DIR?>contact">Contact Us</a></li>
+											<li><a href="<?=DIR?>contact">Contact Us</a></li> -->
 										</ul>
 									</nav>
 								</div>
@@ -123,14 +140,5 @@ use helpers\assets;
 				url::template_path() . 'js/custom.js',
 			));
 		?>
-
-		<script>
-			$(function() {
-				$('.datepicker').datepicker({
-					format: 'mm-dd-yyyy',
-				});
-			});
-		</script>
-
 	</body>
 </html>

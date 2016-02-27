@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>corporate">Corporate</a></li>
-								<li class="active">Business Tax Issues</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>corporate"><?=$GLOBALS['glt_nav']['3']['main']['corporate']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['3']['sub']['business_issues']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Business Tax Issues</h1>
+							<h1 class="page-title"><?=$data['glt_business_tax_issues']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
@@ -49,28 +49,15 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<p>
-											As a business owner, it's always daunting to encounter tax issues with CRA. 
-											We have dealt with many different business tax issues such as:
+											<?=$data['glt_business_tax_issues']['body_1']['content_1']?>
 										</p>
 										<ul>
-											<li>
-												CRA Audits
-											</li>
-											<li>
-												Late or Unfiled Taxes
-											</li>
-											<li>
-												Payroll source deduction reconciliations
-											</li>
-											<li>
-												GST/HST refunds disallowed
-											</li>
-											<li>
-												Challenging specific expenses and amounts disallowed
-											</li>
+											<?php foreach ($data['glt_business_tax_issues']['body_1']['list'] as $key => $value) { ?>
+												<li><?=$value?></li>
+											<?php } ?>
 										</ul>
 										<p class="m-t-lg">
-											At Global Link Tax we will explain difficult tax situations to you in simple language, we will take ownership of your case as if it were our own problem, and help you resolve the case as quickly and cost effectively as possible. 
+											<?=$data['glt_business_tax_issues']['body_1']['content_2']?>
 										</p>
 									</div>
 								</div>

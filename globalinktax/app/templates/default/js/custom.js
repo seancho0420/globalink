@@ -7,3 +7,11 @@
  * License URI:http://support.wrapbootstrap.com/
  * File Description: Place here your custom scripts
  */
+
+$(document).ready(function() {
+	$(function() {
+		$('.datepicker').datepicker({
+			dateFormat: 'mm/dd/yyyy',
+		});
+	});
+});

@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>corporate">Corporate</a></li>
-								<li class="active">HST Return</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>corporate"><?=$GLOBALS['glt_nav']['3']['main']['corporate']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['3']['sub']['hst']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,28 +41,16 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">HST Return</h1>
+							<h1 class="page-title"><?=$data['glt_hst_return']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="animated fadeInUpSmall">
 								<div class="row">
 									<div class="col-xs-12">
-										<p>
-											If your business has a GST/HST number, you are required to file and remit collected GST/HST at least once a year. 
-											How often you have to file GST/HST returns depends on the length of your reporting period, which is based on the amount of your business's annual taxable sales. 
-										</p>
-										<p>
-											Usually when you register for a GST/HST number, your business will be assigned a reporting period and the Canada Revenue Agency will mail you a personalized GST/HST Return for Registrants at the appropriate time.
-										</p>
-										<p>
-											GST/HST collected can be offset by input tax credits, also known as eligible business expenses that you paid GST/HST on. 
-										</p>
-										<p>
-											There are two ways to calculate your GST/HST owing or refund, the "regular method" and the "quick method". 
-											The quick method is popular for small businesses and certain professionals who can actually end up owing less GST/HST under that method. 
-											Come speak to us to see which method will save your business the most amount of money. 
-										</p>
+										<?php foreach ($data['glt_hst_return']['body_1'] as $key => $value) { ?>
+											<p><?=$value?></p>
+										<?php } ?>
 									</div>
 								</div>
 							</div>

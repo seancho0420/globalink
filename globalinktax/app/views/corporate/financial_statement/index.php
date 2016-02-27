@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>corporate">Corporate</a></li>
-								<li class="active">Financial Statement Preparation</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>corporate"><?=$GLOBALS['glt_nav']['3']['main']['corporate']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['3']['sub']['financial_statement']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">Financial Statement Preparation</h1>
+							<h1 class="page-title"><?=$data['glt_financial_statement']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
@@ -49,8 +49,7 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<p>
-											Financial statements often need to be prepared for stakeholders' review, financing, other regulatory purposes, etc… 
-											Global Link Tax can help with a review of the company's financial documents and compilation of its financial statements. 
+											<?=$data['glt_financial_statement']['body_1']?>
 										</p>
 									</div>
 								</div>

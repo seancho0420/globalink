@@ -19,9 +19,9 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li><a href="<?=DIR?>personal">Personal</a></li>
-								<li class="active">US Personal Tax Return</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li><a href="<?=DIR?>personal"><?=$GLOBALS['glt_nav']['2']['main']['personal']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['2']['sub']['us']?></li>
 							</ol>
 						</div>
 					</div>
@@ -41,32 +41,15 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">US Personal Tax Return</h1>
+							<h1 class="page-title"><?=$data['glt_us_personal_tax_return']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="row">
 								<div class="col-xs-12 animated fadeInUpSmall">
-									<p>
-										For American Green card holders and all US citizens living and working abroad, it is mandatory to file a US tax return. 
-										Green card holders and all US citizens are required to file a US return, no matter where they live, as long as their income (earned in the US and abroad) is just over $9,000. 
-										Many people wrongly assume that because they have never owed money to the IRS, they simply don't have to file.
-										Earning anything over $9,350 does require you to file, however. 
-									</p>
-									<p>
-										The US has treaties with many foreign countries that will reduce or even eliminate actual owed tax. 
-										You cannot take advantage of these benefits if you don't file.
-									</p>
-									<p>
-										Taxpayers may also have to file a state return in addition to a federal return depending on which state you have moved from. 
-										Each US state sets its own rules regarding state taxes and expats. 
-										Some states demand that you file a state return, while others release you when you move away.
-									</p>
-									<p>
-										At Global Link Tax, we will explain difficult US tax situations to you in simple and concise language. 
-										We will help you fulfill your US tax filing obligations to the IRS and ensure its done property. 
-										At Global Link, our principal accountant Mr. Yeung is a US Certified Public Accountant (CPA) and has helped many expats living in Canada file their Canadian and US tax returns.
-									</p>
+									<?php foreach ($data['glt_us_personal_tax_return']['body_1'] as $key => $value) { ?>
+										<p><?=$value?></p>
+									<?php } ?>
 								</div>
 							</div>
 						</div>

@@ -19,8 +19,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
-								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-								<li class="active">T2-Annual Corporate Tax</li>
+								<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+								<li class="active"><?=$GLOBALS['glt_nav']['3']['sub']['corporate']?></li>
 							</ol>
 						</div>
 					</div>
@@ -40,30 +40,16 @@
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">T2-Annual Corporate Tax</h1>
+							<h1 class="page-title"><?=$data['glt_annual_corporate_tax']['title']?></h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
 							<div class="animated fadeInUpSmall">
 								<div class="row">
 									<div class="col-xs-12">
-										<p>
-											Canadian businesses are subject to Canadian corporate income taxes on their worldwide income. 
-											Depending on the type and location of products or services being offered, federal and/or provincial business taxes may apply to a corporation. 
-										</p>
-										<p>
-											Canadian controlled private corporations (CCPC) in which the majority of shareholders are Canadian residents are eligible for a reduction in the general tax rate.
-										</p>
-										<p>
-											When calculating net income or profits, any reasonable expenses incurred to earn that income are generally deductible. 
-											However, for capital expenditures e.g. cars, machinery, property, those amounts must be capitalized and a portion may be deducted each year according to CRA’s Capital Cost Allowance (CCA) guidelines. 
-										</p>
-										<p>
-											Several tax credits are available to reduce taxes payable, including the small business deduction, provincial tax credit, investment tax credit and the scientific research and development tax credit.
-										</p>
-										<p>
-											Please make an appointment with our accountant for an in-depth analysis of your corporate return.
-										</p>
+										<?php foreach ($data['glt_annual_corporate_tax']['body_1'] as $key => $value) { ?>
+											<p><?=$value?></p>
+										<?php } ?>
 									</div>
 								</div>
 							</div>
