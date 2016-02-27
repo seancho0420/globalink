@@ -416,4 +416,65 @@ return array(
 			"submit"=>"Submit",
 		),
 	),
+
+	"glt_noncanadian_form"=>array(
+		"title"=>"Canadian Tax Returns for Non-Canadians",
+		"body"=>array(
+			"1"=>array(
+				"main"=>"If you are on a working holiday visa, temporary visa, studying or working in Canada, or you have already left the Canada, you must file a Canadian tax return each year.",
+				"sub"=>array(),
+			),
+			"2"=>array(
+				"main"=>"We do all the work for you easy and stress-free! Our service is guaranteed to get you the maximum legal tax refund!",
+				"sub"=>array(),
+			),
+			"3"=>array(
+				"main"=>"You can file for the years you have been in Canada. The Canadian tax year ends December 31",
+				"sub"=>array(
+					"<strong>Average Canadian Tax Refund: $250-$1000</strong>",
+					"<strong>FREE Tax Refund Estimation</strong>&nbsp;&nbsp;&nbsp;Fill in the form below",
+					"<strong>No Refund - No Fee!</strong>&nbsp;&nbsp;&nbsp;Pay nothing upfront.",
+				),
+			),
+			"4"=>array(
+				"main"=>"You can claim tax back from Canada for a number of reasons including:",
+				"sub"=>array(
+					"You paid rent or homestay expenses",
+					"You had Federal taxes, CPP, EI deducted from your job",
+					"You paid college/university/language school tuition fees and textbooks",
+					"You paid medical expenses",
+					"You paid for public transit passes",
+				),
+			),
+			"5"=>array(
+				"main"=>"At Global Link Tax, we will:",
+				"sub"=>array(
+					"Review your situation to estimate your refund",
+					"Our certified accountant will file your taxes accurately and professionally to ensure you get the maximum legal tax refund",
+					"Help you get your T4, rental receipts, public transit passes, or any other missing documents",
+					"If you have left Canada, we will send your refund to you anywhere in the world",
+				),
+			),
+		),
+		"form"=>array(
+			"title"=>"Claim Your Canadian Tax back now! We can help you anywhere in Canada or if you have returned to your home country.<br>
+				Contact us now or fill out the form below for a free assessment of your tax case.",
+			"firstname"=>"First name",
+			"lastname"=>"Last name",
+			"email"=>"Email",
+			"phone"=>"Phone",
+			"sin"=>"Social Insurance Number (SIN) or Individual Tax Number (ITN)",
+			"birthdate"=>"Birthdate",
+			"arrive_in_canada"=>"When did you arrive in Canada",
+			"work_in_canada"=>"Were you working in Canada",
+			"make_money"=>"How much money did you earn in Canada",
+			"rent_fee"=>"How much rent did you paid during the year",
+			"submit"=>"Claim Now",
+			"submit_msg"=>"<strong>Submitted! </strong> We will contact you within 1 business day.",
+		),
+		"blurb"=>array(
+			"Citizens of the below countries on working holiday visa are eligible for a tax refund in Canada:",
+			"Australia, Austria, Belgium, Chile, Costa Rica, Croatia, Czech Republic, Denmark, Estonia, France, Germany, Greece, Hong Kong SAR, Ireland, Italy, Japan, South Korea, Latvia, Lithuania, Mexico, The Netherlands, New Zealand, Norway, Poland, Slovakia, Slovenia, Spain, Sweden, Switzerland, Taiwan, Ukraine and the United Kingdom",
+		),
+	),
 );

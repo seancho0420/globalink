@@ -176,6 +176,8 @@ class glt extends \core\controller{
 	}
 
 	public function noncanadians() {
+		$data['glt_noncanadian_form'] = $this->language->get('glt_noncanadian_form');
+		
 		if(isset($_POST['submit'])) {
 			$params = $_POST;
 
@@ -187,10 +189,10 @@ class glt extends \core\controller{
 		View::rendertemplate('footer', $data);
 	}
 
-	public function cn() {
-		header("Location: http://cn.globalinktax.com/cn/");
-		die();
-	}
+	// public function cn() {
+	// 	header("Location: http://cn.globalinktax.com/cn/");
+	// 	die();
+	// }
 
 	// public function kr() {
 	// 	header("Location: http://kr.globalinktax.com");

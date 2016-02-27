@@ -5,8 +5,9 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ol class="breadcrumb">
-					<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>">Home</a></li>
-					<li class="active">Canadian Tax Returns for Non-Canadians</li>
+					<li><i class="fa fa-home pr-10"></i><a href="<?=DIR?>"><?=$GLOBALS['glt_nav']['1']['main']['home']?></a></li>
+					<li><a href="<?=DIR?>personal"><?=$GLOBALS['glt_nav']['2']['main']['personal']?></a></li>
+					<li class="active"><?=$GLOBALS['glt_nav']['2']['sub']['noncanadians']?></li>
 				</ol>
 			</div>
 		</div>
@@ -27,62 +28,37 @@
 
 				<!-- page-title start -->
 				<!-- ================ -->
-				<h1 class="page-title">Canadian Tax Returns for Non-Canadians</h1>
+				<h1 class="page-title"><?=$data['glt_noncanadian_form']['title']?></h1>
 				<div class="separator-2"></div>
 				<!-- page-title end -->
 
 				<div class="animated fadeInUpSmall">
 					<div class="row">
 						<div class="col-xs-12">
-							<p>
-								If you are on a working holiday visa, temporary visa, studying or working in Canada, or you have already left the Canada, you must file a Canadian tax return each year.
-							</p>
-							<p>
-								We do all the work for you easy and stress-free! Our service is guaranteed to get you the maximum legal tax refund!
-							</p>
-						</div>
-					</div>
-
-					<div class="row m-t-sm">
-						<div class="col-xs-12">
-							<p class="m-b-xs">
-								You can file for the years you have been in Canada. The Canadian tax year ends December 31
-							</p>
-
-							<ul>
-								<li>
-									<strong>Average Canadian Tax Refund: $250-$1000</strong>
-								</li>
-								<li>
-									<strong>FREE Tax Refund Estimation</strong>&nbsp;&nbsp;&nbsp;Fill in the form below
-								</li>
-								<li>
-									<strong>No Refund - No Fee!</strong>&nbsp;&nbsp;&nbsp;Pay nothing upfront.
-								</li>
-							</ul>
-
-							<p class="m-t-lg m-b-xs">
-								You can claim tax back from Canada for a number of reasons including:
-							</p>
-
-							<ul>
-								<li>You paid rent or homestay expenses</li>
-								<li>You had Federal taxes, CPP, EI deducted from your job</li>
-								<li>You paid college/university/language school tuition fees and textbooks</li>
-								<li>You paid medical expenses</li>
-								<li>You paid for public transit passes</li>
-							</ul>
-
-							<p class="m-t-lg m-b-xs">
-								At Global Link Tax, we will:
-							</p>
-
-							<ul>
-								<li>Review your situation to estimate your refund</li>
-								<li>Our certified accountant will file your taxes accurately and professionally to ensure you get the maximum legal tax refund</li>
-								<li>Help you get your T4, rental receipts, public transit passes, or any other missing documents</li>
-								<li>If you have left Canada, we will send your refund to you anywhere in the world</li>
-							</ul>
+							<?php
+							foreach ($data['glt_noncanadian_form']['body'] as $key => $value) {
+							?>
+							
+								<p><?=$value['main']?></p>
+								
+								<?php
+								if(sizeof($value['sub'])) {
+								?>
+								<ul class="m-t-n m-b-md">
+									<?php
+									foreach ($value['sub'] as $sub_key => $sub) {
+									?>
+									<li><?=$sub?></li>
+									<?php
+									}
+									?>
+								</ul>
+								<?php
+								}
+								?>
+							<?php
+							}
+							?>
 						</div>
 					</div>
 				</div>
@@ -92,18 +68,17 @@
 					<div class="row m-t-lg">
 						<div class="col-md-12">
 							<p>
-								Claim Your Canadian Tax back now! We can help you anywhere in Canada or if you have returned to your home country.<br>
-								Contact us now or fill out the form below for a free assessment of your tax case.
+								<?=$data['glt_noncanadian_form']['form']['title']?>
 							</p>
 						</div>
 
 						<div class="col-md-12">
 							<?php
-							if($data) {
+							if($data['submit']) {
 							?>
 							<div class="alert alert-success alert-dismissible" role="alert">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<strong>Submitted! </strong> We will contact you within 1 business day.
+								<?=$data['glt_noncanadian_form']['form']['submit_msg']?>
 							</div>
 							<?php
 							}
@@ -117,14 +92,14 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="firstname">First name <span class="text-danger">*</span></label>
+										<label for="firstname"><?=$data['glt_noncanadian_form']['form']['firstname']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="firstname" name="firstname" placeholder="" required>
 									</div>
 								</div>
 
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="lastname">Last name <span class="text-danger">*</span></label>
+										<label for="lastname"><?=$data['glt_noncanadian_form']['form']['lastname']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="lastname" name="lastname" placeholder="" required>
 									</div>
 								</div>
@@ -133,14 +108,14 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="email">Email <span class="text-danger">*</span></label>
+										<label for="email"><?=$data['glt_noncanadian_form']['form']['email']?> <span class="text-danger">*</span></label>
 										<input type="email" class="form-control" id="email" name="email" placeholder="abc@email.com" required>
 									</div>
 								</div>
 
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="phone">Phone</label>
+										<label for="phone"><?=$data['glt_noncanadian_form']['form']['phone']?></label>
 										<input type="text" class="form-control" id="phone" name="phone" placeholder="123-456-7890">
 									</div>
 								</div>
@@ -149,14 +124,14 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="sin">Social Insurance Number (SIN) or Individual Tax Number (ITN)</label>
+										<label for="sin"><?=$data['glt_noncanadian_form']['form']['sin']?></label>
 										<input type="text" class="form-control" id="sin" name="sin" placeholder="">
 									</div>
 								</div>
 
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="birthdate">Birthdate</label>
+										<label for="birthdate"><?=$data['glt_noncanadian_form']['form']['birthdate']?></label>
 										<input type="text" class="form-control datepicker" id="birthdate" name="birthdate" placeholder="MM/DD/YYYY" maxlength="10">
 									</div>
 								</div>
@@ -165,14 +140,14 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="arrived_at">When did you arrive in Canada <span class="text-danger">*</span></label>
+										<label for="arrived_at"><?=$data['glt_noncanadian_form']['form']['arrive_in_canada']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="arrived_at" name="arrived_at" placeholder="e.g. 2010" required>
 									</div>
 								</div>
 
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="worked">Were you working in Canada <span class="text-danger">*</span></label>
+										<label for="worked"><?=$data['glt_noncanadian_form']['form']['work_in_canada']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="worked" name="worked" placeholder="Yes / No" required>
 									</div>
 								</div>
@@ -181,14 +156,14 @@
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="earned">How much money did you earn in Canada <span class="text-danger">*</span></label>
+										<label for="earned"><?=$data['glt_noncanadian_form']['form']['make_money']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="earned" name="earned" placeholder="$" required>
 									</div>
 								</div>
 
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="rent">How much rent did you paid during the year <span class="text-danger">*</span></label>
+										<label for="rent"><?=$data['glt_noncanadian_form']['form']['rent_fee']?> <span class="text-danger">*</span></label>
 										<input type="text" class="form-control" id="rent" name="rent" placeholder="$" required>
 									</div>
 								</div>
@@ -196,22 +171,24 @@
 
 							<div class="row m-t-sm">
 								<div class="col-md-12 text-center">
-									<input type="submit" value="Claim Now" name="submit" class="btn btn-default btn-block">
+									<input type="submit" value="<?=$data['glt_noncanadian_form']['form']['submit']?>" name="submit" class="btn btn-default btn-block">
 								</div>
 							</div>
 						</form>
-
+	
+						<?php if(sizeof($data['glt_noncanadian_form']['blurb'])) { ?>
 						<div class="row m-t-xl">
 							<div class="col-md-12">
 								<p class="m-b-xs">
-									Citizens of the below countries on working holiday visa are eligible for a tax refund in Canada:
+									<?=$data['glt_noncanadian_form']['blurb'][0]?>
 								</p>
 
 								<p>
-									Australia, Austria, Belgium, Chile, Costa Rica, Croatia, Czech Republic, Denmark, Estonia, France, Germany, Greece, Hong Kong SAR, Ireland, Italy, Japan, South Korea, Latvia, Lithuania, Mexico, The Netherlands, New Zealand, Norway, Poland, Slovakia, Slovenia, Spain, Sweden, Switzerland, Taiwan, Ukraine and the United Kingdom
+									<?=$data['glt_noncanadian_form']['blurb'][1]?>
 								</p>
 							</div>
 						</div>
+						<?php } ?>
 					</div>
 				</div>
 			<!-- main end -->
