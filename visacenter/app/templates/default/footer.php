@@ -19,6 +19,7 @@
 										<li class="googleplus"><a target="_blank" href="https://plus.google.com/u/2/109914450839805951862/about"><i class="fa fa-google-plus"></i></a></li>
 										<!-- <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li> -->
 										<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/global-link-immigration-and-business-services?trk=company_logo"><i class="fa fa-linkedin"></i></a></li>
+										<li><a target="_blank" href="//www.worldnomads.com/Turnstile/AffiliateLink?partnerCode=gvisas&source=&utm_source=gvisas&utm_content=link&path=https://www.worldnomads.com/travel-insurance"><i class="fa fa-plane"></i></a></li>
 									</ul>
 
 									<p class="m-t-lg">Copyright &copy; 2015 Global Link Visa Center. All Rights Reserved.</p>
@@ -110,14 +111,5 @@
 			helpers\url::template_path() . 'js/custom.js',
 			));
 		?>
-
-		<script>
-			$(function() {
-				$('.datepicker').datepicker({
-					format: 'mm-dd-yyyy',
-				});
-			});
-		</script>
-
 	</body>
 </html>

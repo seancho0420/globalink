@@ -30,4 +30,10 @@ $(document).ready(function() {
 			$('#organization_info').hide('fast');
 		}
 	});
+
+	$(function() {
+		$('.datepicker').datepicker({
+			format: 'mm-dd-yyyy',
+		});
+	});
 });

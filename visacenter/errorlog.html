@@ -1,5 +1,29 @@
 <h3>Exception information:</h3>
 
+		<p><strong>Date:</strong> Dec 05, 2015 0:32AM</p>
+
+		<p><strong>Message:</strong> SQLSTATE[HY000] [2002] Operation timed out</p>
+
+		<p><strong>Code:</strong> 2002</p>
+
+		<p><strong>File:</strong> /Applications/MAMP/htdocs/projects/globalink/visacenter/app/helpers/database.php</p>
+
+		<p><strong>Line:</strong> 54</p>
+
+		<h3>Stack trace:</h3>
+
+		<pre>#0 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/helpers/database.php(54): PDO->__construct('mysql:host=box9...', 'toronul2_global...', 'toronul2_global...')
+#1 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/core/model.php(25): helpers\Database::get()
+#2 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/models/glvc.php(5): core\Model->__construct()
+#3 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/controllers/glvc.php(32): models\Glvc->__construct()
+#4 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/core/router.php(80): controllers\glvc->__construct(NULL)
+#5 /Applications/MAMP/htdocs/projects/globalink/visacenter/app/core/router.php(196): core\Router::invokeObject('\\controllers\\gl...')
+#6 /Applications/MAMP/htdocs/projects/globalink/visacenter/index.php(80): core\Router::dispatch()
+#7 {main}</pre>
+
+		<hr />
+<h3>Exception information:</h3>
+
 		<p><strong>Date:</strong> May 20, 2015 15:31PM</p>
 
 		<p><strong>Message:</strong> SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'box953.bluehost.com' (60)</p>

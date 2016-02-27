@@ -52,7 +52,7 @@ return array(
 		),
 	),
 
-	"passport_photo_price" => 'Passport/ID photos $15 for 2 pictures, every additional 2 pictures $10.<br>Digital Picture, Cropped to Your Specifications, Sent via Email or USB $20.',
+	"passport_photo_price" => 'Passport/ID photos $20 for 2 pictures, every additional 2 pictures $10.<br>Digital Picture, Cropped to Your Specifications, Sent via Email or USB $20.',
 	
 	"passport_photo" => array(
 		"Algeria"=>array(
