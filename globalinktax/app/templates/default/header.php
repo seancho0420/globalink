@@ -114,9 +114,9 @@ $current_page = url::lastsegment(url::segments());
 						<div class="col-xs-12">
 							<div class="header-top-first clearfix">
 								<div class="row">
-									<div class="col-sm-3">
+									<div class="col-sm-4">
 										<div class="logo">
-											<a href="<?=DIR?>"><img id="logo" src="<?=helpers\url::template_path() . 'images/glt_logo.png'?>" class="img-responsive" alt="<?=SITETITLE?>"></a>
+											<a href="<?=DIR?>"><img src="<?=helpers\url::template_path() . 'images/wycma_logo.jpg'?>" class=""><img id="logo" src="<?=helpers\url::template_path() . 'images/glt_logo.png'?>" class="" alt="<?=SITETITLE?>"></a>
 										</div>
 									</div>
 
@@ -142,7 +142,7 @@ $current_page = url::lastsegment(url::segments());
 
 									<div class="space-10 visible-xs-block"></div>
 
-									<div class="col-sm-3">
+									<div class="col-sm-2">
 										<!-- <form class="form">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-search"></i></span>

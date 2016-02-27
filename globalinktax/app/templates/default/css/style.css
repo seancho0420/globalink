@@ -4037,6 +4037,10 @@ a.overlay.small i {
 	-ms-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
+
+	width: 50%;
+	display: inline;
+	margin-top: 15px;
 }
 .logo img:hover {
 	/*opacity: 0.85;
