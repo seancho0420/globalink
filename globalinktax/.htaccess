@@ -1,3 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^globalinktax\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.globalinktax\.com$
+RewriteRule ^cn$ "http\:\/\/cn\.globalinktax\.com\/" [R=301,L]
+RewriteRule ^kr$ "http\:\/\/kr\.globalinktax\.com\/" [R=301,L]
+
 Options -Indexes
 
 <IfModule mod_rewrite.c>
