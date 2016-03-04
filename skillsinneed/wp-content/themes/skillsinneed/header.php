@@ -118,16 +118,17 @@
 
 											<!-- Toggle get grouped for better mobile display -->
 											<div class="navbar-header">
-												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
 													<span class="sr-only">Toggle navigation</span>
 													<span class="icon-bar"></span>
 													<span class="icon-bar"></span>
 													<span class="icon-bar"></span>
 												</button>
 											</div>
-
-											<?php wp_nav_menu( array('menu'=>'main-menu', 'menu_class'=>'nav navbar-nav navbar-right current-menu-item') ); ?>
-
+											
+											<div class="collapse navbar-collapse" id="navbar-collapse-main">
+												<?php wp_nav_menu( array('menu'=>'main-menu', 'menu_class'=>'nav navbar-nav navbar-right current-menu-item') ); ?>
+											</div>
 										</div>
 									</nav>
 									<!-- navbar end -->
