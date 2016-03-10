@@ -8,7 +8,7 @@ get_header();
 ?>
 
 <?php $args = array(
-    'numberposts' => 4,
+    'posts_per_page' => 4,
     'offset' => 0,
     'category' => 0,
     'orderby' => 'post_date',
