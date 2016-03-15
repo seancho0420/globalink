@@ -88,15 +88,7 @@
 							<div class="header-left clearfix">
 
 								<!-- logo -->
-								<div class="logo">
-									<a href="index.html"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo_red.png" alt="iDea"></a>
-								</div>
-
-								<!-- name-and-slogan -->
-								<div class="site-slogan">
-									Clean &amp; Powerful Bootstrap Theme
-								</div>
-
+								<a href="/"><img id="logo" class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/sin_logo_horizontal.png" alt="SkillsInNeed"></a>
 							</div>
 							<!-- header-left end -->
 

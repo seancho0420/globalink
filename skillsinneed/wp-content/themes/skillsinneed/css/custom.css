@@ -1,9 +1,44 @@
 .header-top {
-	background-color: #58585A;
+	background-color: #454546;
 	height: 24px;
 }
 
+.page-top,
+.main-container {
+	padding: 0;
+}
+
+.page-top img,
+.page-bottom img {
+	width: 100%;
+}
+
+@media(min-width: 768px) {
+	#banner-first {
+		padding-right:3px;
+	}
+
+	#banner-second {
+		padding:0 9px;
+	}
+
+	#banner-third {
+		padding-left:3px;
+	}
+}
+
+#user-type {
+	background-color: #868687;
+	color: #fff;
+	padding: 5px 0;
+}
+
 .footer {
-	background-color: #58585A;
+	background-color: #454546;
 	height: 200px;
+}
+
+/* Template Simple */
+#template-simple .container {
+	height: 500px;
 }
