@@ -2,5 +2,11 @@
 globalinktax/.htaccess
 globalinktax/errorlog.html
 globalinktax/app/core/config.php
+canadawidepardons/.htaccess
+canadawidepardons/errorlog.html
+canadawidepardons/app/core/config.php
+visacenter/.htaccess
+visacenter/errorlog.html
+visacenter/app/core/config.php
 skillsinneed/wp-config.php
 skillsinneed/.htaccess
