@@ -1,5 +1,7 @@
 $(function() {
-	if($('.main-navigation li.dropdown ul').hasClass('sub-menu')) {
-		$('.main-navigation li.dropdown ul').addClass('dropdown-menu');
-	}
+	$('.main-navigation li.dropdown ul').each(function() {
+		if($(this).hasClass('sub-menu')) {
+			$(this).addClass('dropdown-menu');
+		}
+	});
 });

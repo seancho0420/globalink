@@ -44,7 +44,25 @@ get_header(); ?>
 						?>
 							</tbody>
 						</table>
+						<?php 
+						$args = array(
+							'base'               => '%_%',
+							'format'             => '?paged=%#%',
+							'show_all'           => false,
+							'end_size'           => 1,
+							'mid_size'           => 2,
+							'prev_next'          => true,
+							'prev_text'          => __('« Previous'),
+							'next_text'          => __('Next »'),
+							'type'               => 'plain',
+							'add_args'           => false,
+							'add_fragment'       => '',
+							'before_page_number' => '',
+							'after_page_number'  => ''
+						);
 
+						echo paginate_links(); 
+						?>
 					<?php
 					// If no content, include the "No posts found" template.
 					else :
