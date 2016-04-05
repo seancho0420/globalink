@@ -48,10 +48,10 @@
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/jquery.countTo.js"></script>
 
 		<!-- Parallax javascript -->
-		<script src="<?php echo get_template_directory_uri(); ?>/plugins/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/jquery.parallax-1.1.3.js"></script>
 
 		<!-- Contact form -->
-		<script src="<?php echo get_template_directory_uri(); ?>/plugins/jquery.validate.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/plugins/jquery.validate.js"></script>
 
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/template.js"></script>
