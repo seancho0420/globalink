@@ -377,7 +377,7 @@ return array(
 		"quote_form"=>array(
 			"title"=>"Please complete the following form so that Global Link Tax Services can quote you a price RANGE:",
 			"fullname"=>"Full Name",
-			"email"=>"Full Name",
+			"email"=>"Email",
 			"phone"=>"Phone",
 			"1"=>"1. # of T4s and other T slips",
 			"2"=>"2. Any self-employment income?",

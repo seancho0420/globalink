@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	"glt_address"=>"40m North of Yonge/Sheppard Subway Station<br>Monday to Friday: 9:30am-6pm,<br>Saturday: 11am-3pm,<br>Sunday: Closed",
+	"glt_address"=>"Yonge/ Sheppard 地铁站出口往北走40米，在Yonge街的西面<br>周一到周五: 9:30am-6pm,<br>周六: 11am-3pm,<br>周日: 休息",
 
 	"glt_nav"=>array(
 		"1"=>array(
@@ -350,55 +350,44 @@ return array(
 		),
 		"message"=>"<strong>Submitted! </strong> We will contact you within 1 business day.",
 		"body"=>array(
-			"title"=>"Getting Started with Global Link Tax Services:",
+			"title"=>"联系我们",
 			"content"=>array(
-				"1"=>"We understand that whether or not you have worked with an accounting firm in the past, you want to
-					know as much as possible about the pricing and processes at Global Link Tax Services. If you are 
-					interested in getting a price range for your personal tax returns, please complete the form below or 
-					e-mail or call us to schedule an in person or phone appointment to discuss your situation in detail.",
-				"2"=>"For business tax returns including partnerships and corporations, we usually need to see your prior 
-					year's tax return and/or your current year's books and records in order to quote you a price. Our 
-					initial consultations are always complementary, and there's never an obligation to proceed 
-					with Global Link Tax after we quote you a fee. Everything always stays confidential and we always 
-					return or destroy documents that we no longer need.",
-				"3"=>"If you choose to work with Global Link Tax, you're always welcome to make an appointment to come 
-					in, but that is NOT required. If it's more convenient for you, we are happy to handle everything via 
-					our e-mail, fax and/or the mail. We hope this makes you feel more comfortable about contacting 
-					Global Link Tax Services and we are always available at <a href='mailto:info@globalinktax.com'>info@globalinktax.com</a> 
-					or <a href='tel:416-225-8686'>416-225-8686</a>.",
+				"1"=>"我们理解无论您曾经是否与会计所打过交道，您都希望（在获取世联报税服务之前）了解更多关于我们服务定价范围、服务流程等相关信息。如果您对个人税务退税服务感兴趣想并想了解我们的服务报价，通过以下三个途径和我们预约面对面咨询服务或电话咨询服务以便进行详聊：填写下方表格、发邮件或者拨打公司电话。",
+				"2"=>"如果您想向我们咨询与合伙或公司有关的退税业务，我们通常需要您提供上一年度的纳税申报单以及/或今年的账簿和记录以进行服务估价。我们所提供的前期咨询服务的目的是为了可以让我们可以更全面地了解您的情况以提供最适合您的服务方案，在该前期咨询服务期间您有权选择是否继续使用我们所提供的后续咨询服务。我们向所有的客户保证我们会严格遵守客户资料保密原则，在服务结束后会及时退回或销毁不再需要的文件。",
+				"3"=>"世联报税欢迎您随时和我们联系并预约面对面的咨询服务，如果您不方便直接前往办公室，我们欢迎您通过电子邮件、传真或者邮件的方式与我们进行沟通以使用我们的服务。我们期待您与我们取得联系。我们的邮箱和电话号码分别是 <a href='mailto:info@globalinktax.com'>info@globalinktax.com</a> 和 <a href='tel:416-225-8686'>416-225-8686</a>.",
 			),
 		),
 		"quote_form"=>array(
-			"title"=>"Please complete the following form so that Global Link Tax Services can quote you a price RANGE:",
-			"fullname"=>"Full Name",
-			"email"=>"Full Name",
-			"phone"=>"Phone",
-			"1"=>"1. # of T4s and other T slips",
-			"2"=>"2. Any self-employment income?",
-			"2-1"=>"2-1. If Yes, amount of revenues",
-			"3"=>"3. Do you own your own home?",
-			"4"=>"4. Were you a student in the tax year?",
-			"5"=>"5. Did you make any RRSP contributions?",
-			"6"=>"6. Did you SELL any stocks and/or bonds?",
-			"7"=>"7. Did you receive any rental income from real estate?",
-			"7-1"=>"7-1. If Yes, how many properties and what provinces are they in?",
-			"8"=>"8. Did you have $100,000 or more in foreign assets?",
-			"9"=>"9. If you are not a Canadian Citizen or Permanent Resident, what is your immigration status and/or type of Visa",
-			"10"=>"10. Please list any other income and tax credits not mentioned above",
-			"thankyou"=>"Thank you for completing this form. Please note we need to see all paperwork and information in order to quote EXACT prices. We will get back to you shortly.",
+			"title"=>"请完成以下表格以完成世联报税估价测试：",
+			"fullname"=>"全名",
+			"email"=>"电子邮件",
+			"phone"=>"联系号码",
+			"1"=>"1. T4的数量和其它T类别报税单的数量",
+			"2"=>"2. 您是否有自雇收入来源？",
+			"2-1"=>"2-1. 如果回答是，自雇收入总额为",
+			"3"=>"3. 您有自己的房屋吗？",
+			"4"=>"4. 您在纳税年度是学生吗？",
+			"5"=>"5. 您是否有注册退休储蓄计划 (RRSP)？",
+			"6"=>"6. 您有出售股票和/或者债券吗？",
+			"7"=>"7. 您是否有出租房屋的收入？",
+			"7-1"=>"7-1. 如果回答是，总共有多少处出租房屋，还有这些房屋都在哪些省份？",
+			"8"=>"8. 您有$100,000或以上的国外资产吗？",
+			"9"=>"9. 如果您不是加拿大永久居民或者加拿大公民，您现在身份是学生、工作还是其它？所持的签证是哪种类型的？",
+			"10"=>"10. 请列出所有上述未提及的收入或可以申请税收抵免的事项。",
+			"thankyou"=>"感谢您完成此份表格。请注意我们在此提供的服务估价不一定是最终的服务报价。我们需要您提供确切的文件和信息以确定最终的服务报价。我们会尽快和您取得联系。谢谢。",
 			"submit"=>"Submit",
 			"yes_no_option"=>array(
-				"yes"=>"YES",
-				"no"=>"NO",
+				"yes"=>"是",
+				"no"=>"否",
 			),
 		),
 		"contact_form"=>array(
-			"title"=>"Request a Consultation",
-			"name"=>"Name",
-			"email"=>"Email",
-			"phone"=>"Phone",
-			"best_time"=>"Best Time to Call or Meet",
-			"message"=>"Message",
+			"title"=>"我要咨询",
+			"name"=>"姓名",
+			"email"=>"电子邮件",
+			"phone"=>"电话",
+			"best_time"=>"适合的电联或会面的时间",
+			"message"=>"其它信息",
 			"options"=>array(
 				"1"=>"Choose",
 				"2"=>"Anytime - Urgent",
@@ -407,7 +396,7 @@ return array(
 				"5"=>"Evening 5PM - 7PM",
 				"6"=>"Saturday 11AM - 3PM",
 			),
-			"submit"=>"Submit",
+			"submit"=>"提交",
 		),
 	),
 
